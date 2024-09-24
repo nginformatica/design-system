@@ -23,7 +23,6 @@
         "noUnusedParameters": true,
         "strictNullChecks": true,
         "rootDir": "src",
-        "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": true,
         "declaration": true,
         "allowSyntheticDefaultImports": true,

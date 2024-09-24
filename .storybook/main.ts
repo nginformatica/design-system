@@ -8,7 +8,6 @@ const config: StorybookConfig = {
     ],
     addons: [
         '@storybook/addon-essentials',
-        '@storybook/addon-styling-webpack',
         '@storybook/addon-themes',
         '@storybook/addon-webpack5-compiler-babel'
     ]
