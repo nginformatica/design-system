@@ -106,6 +106,16 @@ const rulesImport = {
                     position: 'after'
                 },
                 {
+                    pattern: '../commonStyles',
+                    group: 'index',
+                    position: 'after'
+                },
+                {
+                    pattern: '../../commonStyles',
+                    group: 'index',
+                    position: 'after'
+                },
+                {
                     pattern: 'flipper-ui/theme',
                     group: 'index',
                     position: 'after'
