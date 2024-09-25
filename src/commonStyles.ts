@@ -19,4 +19,5 @@ export const Wrapper = styled.div`
     min-height: 100vh;
     padding: 3rem;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 `

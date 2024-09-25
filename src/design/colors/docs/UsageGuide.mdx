@@ -1,0 +1,23 @@
+import { Meta, Unstyled } from '@storybook/blocks';
+
+<Meta title="Design/Cores/Guia de Uso" />
+
+# Guia de Uso
+
+### Configurando o ThemeProvider:
+
+```tsx
+import React from 'react'
+import { Button } from 'flipper-ui'
+import { ThemeProviderFlipper } from 'flipper-ui'
+import { ThemeProvider } from 'styled-components'
+import { muiThemeOptions, theme } from '@/theme'
+
+const App = () => (
+    <ThemeProvider theme={ theme }>
+        <ThemeProviderFlipper options={ muiThemeOptions }>
+            <Button color="primary" />
+        </ThemeProviderFlipper>
+    </ThemeProvider>
+)
+```
