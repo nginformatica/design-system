@@ -1,6 +1,6 @@
 import React from 'react'
 import ng from '../../assets/ng.png'
-import { ImageWrapper, LogoWrapper, Wrapper, Text } from '../styles'
+import { ImageWrapper, LogoWrapper, Wrapper, Text } from './styles'
 
 export const Welcome = () => {
     return (
