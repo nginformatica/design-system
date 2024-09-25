@@ -8,7 +8,7 @@ import { theme } from 'flipper-ui/theme'
 const { primary } = theme.colors
 
 const meta: Meta<typeof Button> = {
-    title: 'Web/Usage Guide',
+    title: 'Web/Guia de uso',
     component: Button
 }
 
