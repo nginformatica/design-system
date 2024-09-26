@@ -17,7 +17,8 @@ import {
     Wrapper,
     Description,
     OrdenateList,
-    ListItems
+    ListItems,
+    FigmaRedirect
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
@@ -29,6 +30,13 @@ export const ColorRoles = () => {
         <Wrapper>
             <ContainerTitle>COLOR ROLES</ContainerTitle>
             <hr />
+            <FigmaRedirect
+                href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
+                target='_blank'
+                rel='noreferrer'>
+                VISUALIZE NO FIGMA 🎨
+            </FigmaRedirect>
+
             <ContainerContent>
                 <Description>
                     Os <b>papéis de cores</b> funcionam como uma camada

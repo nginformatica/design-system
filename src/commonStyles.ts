@@ -1,7 +1,7 @@
 import { default as styled } from 'styled-components'
 import { theme } from 'flipper-ui/theme'
 
-const { gray, neutral } = theme.colors
+const { gray, neutral, primary } = theme.colors
 
 export const Content = styled.div``
 
@@ -48,4 +48,15 @@ export const ContainerTitle = styled(ContentBold)`
 export const ContainerContent = styled.div`
     font-size: 16px;
     color: ${gray[900]};
+`
+
+export const FigmaRedirect = styled.a`
+    text-decoration: none;
+    font-size: 14px;
+    color: ${primary.light};
+    transition: font-size 0.5s ease-in-out;
+
+    &:hover {
+        font-size: 15px;
+    }
 `

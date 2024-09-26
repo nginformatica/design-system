@@ -16,7 +16,8 @@ import {
     FlexBetween,
     ListItems,
     OrdenateList,
-    Wrapper
+    Wrapper,
+    FigmaRedirect
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
@@ -64,6 +65,13 @@ export const ColorSystem = () => {
         <Wrapper>
             <ContainerTitle>COLOR SYSTEM</ContainerTitle>
             <hr />
+            <FigmaRedirect
+                href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
+                target='_blank'
+                rel='noreferrer'>
+                VISUALIZE NO FIGMA 🎨
+            </FigmaRedirect>
+
             <ContainerContent>
                 <Description>
                     Um <b>sistema de cores</b> refere-se ao conjunto completo de
