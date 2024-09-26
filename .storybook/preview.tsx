@@ -10,7 +10,7 @@ const preview: Preview = {
                 order: [
                     'Comece por aqui',
                     ['Bem-vindo!', 'Introdução'],
-                    'Design',
+                    'Foundations',
                     [
                         'Cores',
                         ['Guia de Uso', 'Sistema de Cores', 'Papéis de Cores'],
