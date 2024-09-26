@@ -13,7 +13,7 @@ const preview: Preview = {
                     'Design',
                     [
                         'Cores',
-                        ['Guia de Uso', 'Sistema de cores', 'Funções das cores'],
+                        ['Guia de Uso', 'Sistema de Cores', 'Papéis de Cores'],
                         'Ícones',
                         'Tipografia'
                     ],
