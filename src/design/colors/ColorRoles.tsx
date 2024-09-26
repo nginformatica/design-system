@@ -3,14 +3,22 @@ import {
     ColorsCard,
     CardHeader,
     HeaderColor,
-    ContentBold,
     CardColor,
     Container,
-    isLightColor,
-    ContainerContent,
-    ContainerTitle
+    isLightColor
 } from './styles'
-import { Content, Flex, FlexBetween, Wrapper } from '../../commonStyles'
+import {
+    Content,
+    ContentBold,
+    ContainerTitle,
+    ContainerContent,
+    Flex,
+    FlexBetween,
+    Wrapper,
+    Description,
+    OrdenateList,
+    ListItems
+} from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
 const { feedback, criticality, primary, secondary, action, priority } =
@@ -21,7 +29,63 @@ export const ColorRoles = () => {
         <Wrapper>
             <ContainerTitle>COLOR ROLES</ContainerTitle>
             <hr />
-            <ContainerContent>Descrição</ContainerContent>
+            <ContainerContent>
+                <Description>
+                    Os <b>papéis de cores</b> funcionam como uma camada
+                    adicional de organização dentro do sistema de cores. Eles
+                    descrevem a função de uma cor específica em uma interface e
+                    seu contexto de uso.
+                </Description>
+                <Description>
+                    Esses papéis atuam como regras ou guias sobre como as cores
+                    devem ser distribuídas na interface para garantir
+                    consistência e clareza. Eles permitem que o sistema de cores
+                    seja aplicado de maneira lógica e funcional, garantindo que
+                    cores sejam usadas de forma intencional e relevante.
+                </Description>
+
+                <Description>
+                    Cada papel tem uma função específica na interface, por
+                    exemplo:
+                </Description>
+                <ul>
+                    <ListItems>
+                        <b>Cor primária: </b> aplicada ao conteúdo principal que
+                        precisa de maior foco;
+                    </ListItems>
+                    <ListItems>
+                        <b>Cor secundária:</b> aplicada a conteúdos menos
+                        relevantes na interface;
+                    </ListItems>
+                    <ListItems>
+                        <b>Cor de feedback: </b> associada a mensagens de erro,
+                        alerta ou sucesso;
+                    </ListItems>
+                    <ListItems>
+                        <b>Cor de erro: </b> utilizada para comunicar estados de
+                        erro, como campos não preenchidos corretamente.
+                    </ListItems>
+                </ul>
+
+                <Description>Importância dos papéis de cores:</Description>
+                <OrdenateList>
+                    <ListItems>
+                        <b>Hierarquia visual: </b> Cria uma ordem visual clara e
+                        intuitiva, facilitando a navegação e o uso da interface;
+                    </ListItems>
+                    <ListItems>
+                        <b>Coesão funcional: </b> Garante que as cores sejam
+                        usadas consistentemente em todas as partes da interface,
+                        melhorando a experiência do usuário;
+                    </ListItems>
+                    <ListItems>
+                        <b>Acessibilidade e legibilidade: </b> As cores
+                        aplicadas em seus papéis específicos ajudam a reforçar
+                        as funções de feedback visual e interação, como ações de
+                        erro ou sucesso, tornando a experiência mais acessível.
+                    </ListItems>
+                </OrdenateList>
+            </ContainerContent>
 
             <Container name='color-roles'>
                 <ColorsCard key='action'>

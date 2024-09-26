@@ -1,6 +1,6 @@
 import { default as styled } from 'styled-components'
 import { Paper } from 'flipper-ui'
-import { FlexBetween } from '../../commonStyles'
+import { ContentBold, FlexBetween } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
 const { gray, neutral } = theme.colors
@@ -19,10 +19,6 @@ export const isLightColor = (hexColor: string) => {
     return brightness > 200
 }
 
-export const ContentBold = styled.div`
-    font-weight: 700;
-`
-
 export const HeaderColor = styled(ContentBold)`
     padding-bottom: 24px;
     text-transform: capitalize;
@@ -32,16 +28,6 @@ export const CardHeader = styled.div<IProps>`
     padding: 16px;
     background-color: ${props => props.background};
     color: ${props => (props.light ? gray[800] : neutral[50])};
-`
-
-export const ContainerTitle = styled(ContentBold)`
-    font-size: 24px;
-    color: ${gray[800]};
-`
-
-export const ContainerContent = styled.div`
-    font-size: 14px;
-    color: ${gray[900]};
 `
 
 export const Container = styled(Paper)`

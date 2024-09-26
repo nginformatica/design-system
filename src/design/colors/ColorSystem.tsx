@@ -1,16 +1,23 @@
 import React from 'react'
 import {
-    ColorsCard,
-    CardHeader,
-    HeaderColor,
-    ContentBold,
     CardColor,
+    CardHeader,
+    ColorsCard,
     Container,
-    isLightColor,
-    ContainerTitle,
-    ContainerContent
+    HeaderColor,
+    isLightColor
 } from './styles'
-import { Content, FlexBetween, Wrapper } from '../../commonStyles'
+import {
+    Content,
+    ContentBold,
+    ContainerTitle,
+    ContainerContent,
+    Description,
+    FlexBetween,
+    ListItems,
+    OrdenateList,
+    Wrapper
+} from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
 const {
@@ -57,7 +64,42 @@ export const ColorSystem = () => {
         <Wrapper>
             <ContainerTitle>COLOR SYSTEM</ContainerTitle>
             <hr />
-            <ContainerContent>Descrição</ContainerContent>
+            <ContainerContent>
+                <Description>
+                    Um <b>sistema de cores</b> refere-se ao conjunto completo de
+                    cores disponíveis em uma interface. Ele abrange todas as
+                    cores que podem ser usadas em diferentes contextos.
+                </Description>
+                <Description>
+                    O sistema de cores para os produtos SaaS da NG foi criado a
+                    partir das cores base, que são as cores da marca e também as
+                    cores que regem o design de interface. Ele foi projetado
+                    para cobrir uma variedade de necessidades visuais e
+                    funcionais, mantendo a identidade da marca e a experiência
+                    do usuário no centro.
+                </Description>
+
+                <Description>
+                    Importância de um sistema de cores bem projetado:
+                </Description>
+                <OrdenateList>
+                    <ListItems>
+                        <b>Coerência visual: </b>Assegura que todos os elementos
+                        visuais tenham um alinhamento consistente com a
+                        identidade da marca;
+                    </ListItems>
+                    <ListItems>
+                        <b>Comunicação clara:</b> Ajuda a comunicar ações,
+                        estados e intenções de forma clara, usando cores
+                        familiares e previsíveis;
+                    </ListItems>
+                    <ListItems>
+                        <b>Escalabilidade:</b> Um sistema de cores bem
+                        estruturado pode ser facilmente escalado e adaptado para
+                        novas funcionalidades e expansões do produto.
+                    </ListItems>
+                </OrdenateList>
+            </ContainerContent>
 
             <Container name='color-system'>
                 {Object.keys(colors).map(color => (

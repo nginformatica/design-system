@@ -1,4 +1,7 @@
 import { default as styled } from 'styled-components'
+import { theme } from 'flipper-ui/theme'
+
+const { gray, neutral } = theme.colors
 
 export const Content = styled.div``
 
@@ -17,7 +20,32 @@ export const Wrapper = styled.div`
     left: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 3rem;
+    padding: 3.5rem;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: ${neutral[100]};
+`
+
+export const OrdenateList = styled.ol``
+
+export const ListItems = styled.li`
+    padding-bottom: 12px;
+`
+
+export const Description = styled.p`
+    line-height: 24px;
+`
+
+export const ContentBold = styled.div`
+    font-weight: 700;
+`
+
+export const ContainerTitle = styled(ContentBold)`
+    font-size: 24px;
+    color: ${gray[800]};
+`
+
+export const ContainerContent = styled.div`
+    font-size: 16px;
+    color: ${gray[900]};
 `
