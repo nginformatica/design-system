@@ -264,6 +264,13 @@ export const ColorRoles = () => {
                     </CardHeader>
 
                     <CardColor
+                        background={priority.main.neutral}
+                        light={isLightColor(priority.main.neutral)}>
+                        <ContentBold>neutral</ContentBold>
+                        <Content>gray[400]</Content>
+                    </CardColor>
+
+                    <CardColor
                         background={priority.main.minimal}
                         light={isLightColor(priority.main.minimal)}>
                         <ContentBold>minimal</ContentBold>
@@ -310,6 +317,13 @@ export const ColorRoles = () => {
                             <Content>amber[50]</Content>
                         </FlexBetween>
                     </CardHeader>
+
+                    <CardColor
+                        background={priority.light.neutral}
+                        light={isLightColor(priority.light.neutral)}>
+                        <ContentBold>neutral</ContentBold>
+                        <Content>gray[100]</Content>
+                    </CardColor>
 
                     <CardColor
                         background={priority.light.minimal}
