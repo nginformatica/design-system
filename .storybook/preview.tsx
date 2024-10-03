@@ -1,31 +1,26 @@
 import React from 'react'
 import { Preview } from '@storybook/react'
-import { withThemeFromJSXProvider } from '@storybook/addon-themes'
-import { ThemeProvider, createGlobalStyle } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 import { ThemeProviderFlipper, muiThemeOptions, theme } from 'flipper-ui/theme'
-
-const GlobalStyles = createGlobalStyle`
-  body {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  }
-`
-
-export const decorators = [
-    withThemeFromJSXProvider({
-        GlobalStyles
-    })
-]
 
 const preview: Preview = {
     parameters: {
         options: {
             storySort: {
                 order: [
-                    'Getting Started', ['Welcome', 'Introduction'],
+                    'Comece por aqui',
+                    ['Bem-vindo!', 'Introdução'],
+                    'Foundations',
+                    [
+                        'Cores',
+                        ['Guia de Uso', 'Sistema de Cores', 'Papéis de Cores'],
+                        'Ícones',
+                        'Tipografia'
+                    ],
                     'Web',
-                    ['Introduction', 'Usage Guide', 'Design', 'Components'],
+                    ['Introdução', 'Guia de Uso'],
                     'Mobile',
-                    ['Introduction', 'Usage Guide', 'Design', 'Components']
+                    ['Introdução', 'Guia de Uso']
                 ]
             }
         },

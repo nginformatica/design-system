@@ -1,5 +1,5 @@
 import { default as styled } from 'styled-components'
-import bg from '../assets/bg.png'
+import bg from '../../assets/bg.png'
 import { theme } from 'flipper-ui/theme'
 
 const { neutral } = theme.colors
@@ -27,23 +27,9 @@ export const ImageWrapper = styled.img`
 `
 
 export const Text = styled.h3`
-    color: ${neutral.white};
+    color: ${neutral[50]};
     font-family: Roboto, Helvetica, Arial, sans-serif;
     letter-spacing: 0.25rem;
     text-align: center;
     margin: 6px 0 0 0;
-`
-
-export const WrapperNotification = styled.div`
-    height: 200px;
-`
-
-export const WrapperButton = styled.button`
-    margin: 5px 10px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: none;
-    background-color: #152849;
-    color: #ffffff;
-    cursor: pointer;
 `

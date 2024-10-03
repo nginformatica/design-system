@@ -1,0 +1,78 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Foundations/Cores/Guia de Uso" />
+
+## Guia de Uso
+
+Os temas permitem que você aplique um tom consistente em uma aplicação, permitindo personalizar todos
+os aspectos de design do projeto para atender às necessidades específicas da marca.
+
+[Configurando o ThemeProvider](#configurando-o-themeprovider)
+&nbsp;|&nbsp;
+[Utilizando as cores](#utilizando-as-cores)
+
+### Configurando o ThemeProvider
+
+Para que seja possível aplicar o tema na aplicação, é necessários com dois `providers`:
+
+- **styled-components**: a biblioteca conta com um `ThemeProvider` que tem suporte total a temas.
+Este componente fornece um tema para todos os componentes React abaixo dele por meio da API de contexto.
+Na árvore de renderização, todos os styled-components terão acesso ao tema fornecido, mesmo quando estiverem em vários níveis de profundidade.
+O `ThemeProvider` vai receber um atributo `theme`, que contém todas as cores do **sistema de cores** proposto pelo tema.
+
+- **@mui/material**: os componentes do Material UI aderem ao tema padrão da biblioteca imediatamente
+através do `ThemeProvider` que injeta um tema personalizado na aplicação. Ele depende do contexto do React para
+passar o tema para os componentes, por isso, precisa estar sempre na raiz da aplicação. O `ThemeProvider` vai receber um
+atributo `muiThemeOptions`, que contém as **funções das cores** desejadas, representadas por tokens de funcionalidades, como
+por exemplo `primary`, `secondary`, `error`, entre outras. Isso permite que um componente `<Button />` receba o atributo `color='primary'`
+e seja estilizado de acordo com a cor primary definida na `palette` do `muiThemeOptions`.
+
+```tsx
+import React from 'react'
+import { Button } from 'flipper-ui'
+import { ThemeProviderFlipper } from 'flipper-ui'
+import { ThemeProvider } from 'styled-components'
+import { muiThemeOptions, theme } from '@/theme'
+
+const App = () => (
+    <ThemeProvider theme={ theme }>
+        <ThemeProviderFlipper options={ muiThemeOptions }>
+            <Button color="primary" />
+        </ThemeProviderFlipper>
+    </ThemeProvider>
+)
+```
+
+### Utilizando as cores
+
+#### Sistema de cores
+
+Para utilizar as cores do sistema, é necessário importá-las do `flipper-ui/theme`:
+
+```tsx
+import { default as styled } from 'styled-components'
+import { theme } from 'flipper-ui/theme'
+
+const { gray, red } = theme.colors
+
+export const Content = styled.div`
+    font-size: 14px;
+    color: ${gray[900]};
+    background-color: ${red[400]};
+`
+```
+
+#### Papéis de cores
+
+Para utilizar as cores através de seus papéis, é necessário que a mesma seja utilizada em um componente `@mui`:
+
+```tsx
+import React from 'react'
+import { Button, Typography } from 'flipper-ui'
+
+const Component = () => (
+    <Button color="error" />
+    <Button color="secondary" />
+    <Typography color="primary" />
+)
+```

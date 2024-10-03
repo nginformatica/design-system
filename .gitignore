@@ -1,2 +1,4 @@
 /node_modules/
 /docs
+.yalc/
+yalc.lock
