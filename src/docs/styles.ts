@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     width: 100vw;
     height: 100vh;
     padding: 3rem;
-    background: url(${bg}) no-repeat center center fixed;
+    background: url(${bg as string}) no-repeat center center fixed;
     background-size: cover;
 `
 
