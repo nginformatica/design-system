@@ -1,6 +1,6 @@
 {
 	"name": "ng-design-system",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "The Design System for the NG Saas Products",
 	"author": "NG",
 	"license": "MIT",
@@ -9,9 +9,9 @@
 		"type-check": "tsc --noEmit",
 		"docs:build": "storybook build -o docs",
 		"format": "prettier -w 'src/**/*.{ts,tsx}'",
-		"lint": "eslint -c .eslintrc.js 'src/**/*.{ts,tsx}'",
-		"lint:fix": "eslint -c .eslintrc.js --fix 'src/**/*.{ts,tsx}'",
-		"lint:quiet": "eslint --quiet .eslintrc.js 'src/**/*.{ts,tsx}'"
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"lint:quiet": "eslint . --quiet"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -31,22 +31,23 @@
 		"@types/react-dom": "18.3.1",
 		"@typescript-eslint/eslint-plugin": "8.14.0",
 		"@typescript-eslint/parser": "8.14.0",
-		"amazing-react-charts": "1.1.5",
+		"amazing-react-charts": "1.1.7",
 		"babel-loader": "9.2.1",
 		"babel-plugin-import": "1.13.8",
-		"eslint": "8.57.0",
+		"eslint": "9.14.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-import-resolver-typescript": "3.6.3",
 		"eslint-plugin-import": "2.31.0",
 		"eslint-plugin-prettier": "5.2.1",
 		"eslint-plugin-react": "7.37.2",
-		"flipper-ui": "0.34.9",
+		"flipper-ui": "0.35.0",
 		"prettier": "3.3.3",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"storybook": "8.4.2",
 		"styled-components": "6.1.13",
 		"typescript": "5.6.3",
+		"typescript-eslint": "8.14.0",
 		"webpack": "5.96.1"
 	}
 }
