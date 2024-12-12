@@ -1,7 +1,7 @@
 import React from 'react'
-import { PhotoCamera } from '@mui/icons-material'
 import { DonutChart } from 'amazing-react-charts'
 import { Button } from 'flipper-ui'
+import { IconPhotoCamera } from 'flipper-ui/icons/mui-icons'
 import type { Meta } from '@storybook/react'
 import { theme } from 'flipper-ui/theme'
 
@@ -55,7 +55,7 @@ export const flipperButton = {
 
 export const flipperIcon = {
     render: () => {
-        return <PhotoCamera htmlColor={primary.main} />
+        return <IconPhotoCamera htmlColor={primary.main} />
     },
     parameters: {
         layout: 'centered'
