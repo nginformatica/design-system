@@ -5,6 +5,8 @@ import { theme } from 'flipper-ui/theme'
 
 const { neutral } = theme.colors
 
+export const PropsDescription = styled.div``
+
 export const Container = styled(Paper)`
     display: grid;
     gap: 24px;
@@ -42,14 +44,6 @@ export const ContainerIcon = styled(FlexColumn)`
 export const DescriptionProps = styled(Flex)`
     gap: 16px;
     flex-wrap: wrap;
-`
-
-export const PropsWrapper = styled(FlexColumn)`
-    flex: 1;
-`
-
-export const PropsDescription = styled.div<{ height?: boolean }>`
-    min-height: ${props => (props.height ? '' : '115px')};
 `
 
 export const IconWrapper = styled.div`

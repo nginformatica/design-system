@@ -6,8 +6,7 @@ import {
     ContainerIcon,
     ContainerProps,
     DescriptionProps,
-    PropsDescription,
-    PropsWrapper
+    PropsDescription
 } from './styles'
 import {
     ContainerTitle,
@@ -16,7 +15,8 @@ import {
     Wrapper,
     FigmaRedirect,
     FlexBetweenColumn,
-    Content
+    Content,
+    FlexColumn
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
@@ -126,7 +126,7 @@ export const MuiIcons = () => {
                 </Description>
 
                 <DescriptionProps>
-                    <PropsWrapper>
+                    <FlexColumn>
                         <PropsDescription>
                             <Typography variant='h6'>Tamanho</Typography>
                             <Typography>
@@ -155,7 +155,7 @@ export const MuiIcons = () => {
                             </Typography>
                         </PropsDescription>
 
-                        <ContainerProps align name='mui-icons-size'>
+                        <ContainerProps align justify name='mui-icons-size'>
                             {iconSize.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
@@ -166,15 +166,15 @@ export const MuiIcons = () => {
                                         color='textSecondary'>
                                         <code>{it.size}</code>
                                     </Typography>
-                                    <Typography variant='caption' fontSize={9}>
+                                    <Typography variant='caption' fontSize={11}>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
                             ))}
                         </ContainerProps>
-                    </PropsWrapper>
+                    </FlexColumn>
 
-                    <PropsWrapper>
+                    <FlexColumn>
                         <PropsDescription>
                             <Typography variant='h6'>Cores</Typography>
                             <Typography>
@@ -200,20 +200,20 @@ export const MuiIcons = () => {
                             </Typography>
                         </PropsDescription>
 
-                        <ContainerProps name='mui-icons-color'>
+                        <ContainerProps justify name='mui-icons-color'>
                             {iconColor.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
                                     <Typography
                                         margin='12px 0 0'
                                         variant='caption'
-                                        fontSize={9}>
+                                        fontSize={11}>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
                             ))}
                         </ContainerProps>
-                    </PropsWrapper>
+                    </FlexColumn>
                 </DescriptionProps>
             </ContainerContent>
 

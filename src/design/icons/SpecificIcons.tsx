@@ -8,8 +8,7 @@ import {
     ContainerProps,
     DescriptionProps,
     IconWrapper,
-    PropsDescription,
-    PropsWrapper
+    PropsDescription
 } from './styles'
 import {
     ContainerTitle,
@@ -18,7 +17,8 @@ import {
     Wrapper,
     FigmaRedirect,
     FlexBetweenColumn,
-    Content
+    Content,
+    FlexColumn
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
@@ -231,8 +231,8 @@ export const SpecificIcons = () => {
                 </Description>
 
                 <DescriptionProps>
-                    <PropsWrapper>
-                        <PropsDescription height>
+                    <FlexColumn>
+                        <PropsDescription>
                             <Typography variant='h6'>Propriedades</Typography>
                             <Typography>
                                 Para alterar o tamanho de um ícone, utilize as
@@ -264,7 +264,7 @@ export const SpecificIcons = () => {
                                 </FlexBetweenColumn>
                             ))}
                         </ContainerProps>
-                    </PropsWrapper>
+                    </FlexColumn>
                 </DescriptionProps>
             </ContainerContent>
 
