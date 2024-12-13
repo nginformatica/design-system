@@ -74,9 +74,7 @@ export const MuiIcons = () => {
 
     const handleCopyToClipboard = (iconName: string) => {
         navigator.clipboard
-            .writeText(
-                `import { ${iconName} } from 'flipper-ui/icons/mui-icons'`
-            )
+            .writeText(`import { ${iconName} } from 'flipper-ui/icons/mui'`)
             .then(() => {
                 setIcon(iconName)
                 setOpen(true)

@@ -240,12 +240,12 @@ export const SpecificIcons = () => {
                                 <b>
                                     <code>"width" | "height" | "viewBox"</code>
                                 </b>
-                                . Os ícones já vem com essas propriedades
-                                definidas, caso não passadas, elas serão usadas
-                                como default os valores definidos na criação do
-                                ícone. Como o ícone é um svg, tome cuidado na
-                                hora de atualizar essas props. Para alterar a
-                                cor do ícone, utilize a prop{' '}
+                                . Os ícones já vem com os valores para essas
+                                propriedades definidas, caso não passadas, esses
+                                valores serão usados como default. Como o ícone
+                                é um svg, tome cuidado na hora de atualizar
+                                essas propriedades. Para alterar a cor do ícone,
+                                utilize a prop{' '}
                                 <b>
                                     <code>color</code>
                                 </b>
