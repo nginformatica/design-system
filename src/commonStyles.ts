@@ -1,7 +1,7 @@
 import { default as styled } from 'styled-components'
 import { theme } from 'flipper-ui/theme'
 
-const { gray, neutral, primary } = theme.colors
+const { gray, neutral, lightBlue } = theme.colors
 
 export const Content = styled.div``
 
@@ -9,9 +9,17 @@ export const Flex = styled.div`
     display: flex;
 `
 
+export const FlexColumn = styled(Flex)`
+    flex-direction: column;
+`
+
 export const FlexBetween = styled(Flex)`
     align-items: center;
     justify-content: space-between;
+`
+
+export const FlexBetweenColumn = styled(FlexBetween)`
+    flex-direction: column;
 `
 
 export const Wrapper = styled.div`
@@ -53,10 +61,11 @@ export const ContainerContent = styled.div`
 export const FigmaRedirect = styled.a`
     text-decoration: none;
     font-size: 14px;
-    color: ${primary.light};
-    transition: font-size 0.5s ease-in-out;
+    font-weight: bold;
+    color: ${lightBlue[600]};
+    transition: color 0.4s ease-in-out;
 
     &:hover {
-        font-size: 15px;
+        color: ${lightBlue[800]};
     }
 `

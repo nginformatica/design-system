@@ -1,0 +1,43 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Estilos/Iconografia/Guia de Uso" />
+
+## Guia de Uso
+
+Ícones são símbolos projetados para representar conceitos ou características específicas. É muito importante que uma marca/aplicação tenha uma iconografia bem definida e similar em toda a interface.
+
+[Ícones @mui](#ícones-@mui)
+&nbsp;|&nbsp;
+[Ícones específicos](#ícones-específicos)
+
+### Ícones @mui
+
+A fim de desenvolver uma interface harmônica, utilizamos como base para os ícones a biblioteca do `@mui`. Para utilizá-los, os mesmos são importados diretamente do `flipper-ui`:
+
+```tsx
+import React from 'react'
+import { Content } from './styles'
+import { IconPerson } from 'flipper-ui/icons/@mui'
+
+const App = () => (
+    <Content>
+        <IconPerson color="primary" />
+    </Content>
+)
+```
+
+### Ícones específicos
+
+Alguns ícones necessários para a interface da aplicação não estão disponíveis no `@mui`, com isso, os mesmos foram criados e adicionados ao `flipper-ui`, e devem ser importados da seguinte forma:
+
+```tsx
+import React from 'react'
+import { Content } from './styles'
+import { IconDoctor } from 'flipper-ui/icons/specific'
+
+const App = () => (
+    <Content>
+        <IconDoctor fontSize='18px' />
+    </Content>
+)
+```

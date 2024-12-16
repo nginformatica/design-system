@@ -67,7 +67,7 @@ export const ColorSystem = () => {
 
     return (
         <Wrapper>
-            <ContainerTitle>COLOR SYSTEM</ContainerTitle>
+            <ContainerTitle>SISTEMA DE CORES</ContainerTitle>
             <hr />
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'

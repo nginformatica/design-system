@@ -28,7 +28,7 @@ const { feedback, criticality, primary, secondary, action, priority } =
 export const ColorRoles = () => {
     return (
         <Wrapper>
-            <ContainerTitle>COLOR ROLES</ContainerTitle>
+            <ContainerTitle>PAPÉIS DE CORES</ContainerTitle>
             <hr />
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
