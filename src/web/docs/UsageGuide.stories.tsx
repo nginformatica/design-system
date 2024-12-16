@@ -1,7 +1,7 @@
 import React from 'react'
 import { DonutChart } from 'amazing-react-charts'
 import { Button } from 'flipper-ui'
-import { IconPhotoCamera } from 'flipper-ui/icons/mui-icons'
+import { IconPhotoCamera } from 'flipper-ui/icons/mui'
 import type { Meta } from '@storybook/react'
 import { theme } from 'flipper-ui/theme'
 

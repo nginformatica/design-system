@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { SnackBar, Tooltip, Typography } from 'flipper-ui'
-import * as icons from 'flipper-ui/icons/mui-icons'
+import * as icons from 'flipper-ui/icons/mui'
 import {
     Container,
     ContainerIcon,
