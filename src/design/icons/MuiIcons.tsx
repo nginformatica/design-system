@@ -99,7 +99,7 @@ export const MuiIcons = () => {
             <ContainerTitle>ÍCONES @mui</ContainerTitle>
             <hr />
             <FigmaRedirect
-                href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
+                href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=1-2&t=LeIzan5rXWdhCYVi-1'
                 target='_blank'
                 rel='noreferrer'>
                 VISUALIZE NO FIGMA 🎨
