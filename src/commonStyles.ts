@@ -1,4 +1,5 @@
 import { default as styled } from 'styled-components'
+import { Paper } from 'flipper-ui'
 import { theme } from 'flipper-ui/theme'
 
 const { gray, neutral, lightBlue } = theme.colors
@@ -40,21 +41,11 @@ export const ListItems = styled.li`
     padding-bottom: 12px;
 `
 
-export const Description = styled.p`
-    line-height: 24px;
-`
-
 export const ContentBold = styled.div`
-    font-weight: 700;
-`
-
-export const ContainerTitle = styled(ContentBold)`
-    font-size: 24px;
-    color: ${gray[800]};
+    font-weight: 600;
 `
 
 export const ContainerContent = styled.div`
-    font-size: 16px;
     color: ${gray[900]};
 `
 
@@ -68,4 +59,35 @@ export const FigmaRedirect = styled.a`
     &:hover {
         color: ${lightBlue[800]};
     }
+`
+
+export const Container = styled(Paper)`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    margin-top: 12px;
+`
+
+export const PropsDescription = styled.div``
+
+export const ContainerProps = styled(Paper)<{
+    align?: boolean
+    justify?: boolean
+}>`
+    display: flex;
+    gap: 6px;
+    justify-content: ${props =>
+        props.justify ? 'space-around' : 'space-between'};
+    align-items: ${props => (props.align ? 'baseline' : 'center')};
+    padding: 16px;
+    margin-top: 12px;
+    font-size: 14px;
+    height: auto;
+    min-height: 85px;
+`
+
+export const DescriptionProps = styled(Flex)`
+    gap: 16px;
+    flex-wrap: wrap;
 `

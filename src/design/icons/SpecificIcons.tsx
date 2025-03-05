@@ -2,27 +2,22 @@ import React, { useState } from 'react'
 import { SnackBar, Tooltip, Typography } from 'flipper-ui'
 import { IconContentCopy } from 'flipper-ui/icons/mui'
 import * as icons from 'flipper-ui/icons/specific'
+import { ContainerIcon, IconWrapper } from './styles'
 import {
-    Container,
-    ContainerIcon,
-    ContainerProps,
-    DescriptionProps,
-    IconWrapper,
-    PropsDescription
-} from './styles'
-import {
-    ContainerTitle,
-    ContainerContent,
-    Description,
-    Wrapper,
-    FigmaRedirect,
-    FlexBetweenColumn,
     Content,
-    FlexColumn
+    Wrapper,
+    Container,
+    FlexColumn,
+    FigmaRedirect,
+    ContainerProps,
+    ContainerContent,
+    PropsDescription,
+    DescriptionProps,
+    FlexBetweenColumn
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
-const { primary, indigo } = theme.colors
+const { gray, indigo, primary } = theme.colors
 
 const iconProps = [
     {
@@ -213,7 +208,9 @@ export const SpecificIcons = () => {
 
     return (
         <Wrapper>
-            <ContainerTitle>ÍCONES ESPECÍFICOS</ContainerTitle>
+            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+                ÍCONES ESPECÍFICOS
+            </Typography>
             <hr />
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=1-2&t=LeIzan5rXWdhCYVi-1'
@@ -223,12 +220,12 @@ export const SpecificIcons = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Description>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     Para garantir uma interface harmônica e coerente, alguns
                     ícones foram criados para propósitos específicos em cada
                     aplicação. Eles também podem ser modificados para melhor
                     atender o contexto em que será utilizado.
-                </Description>
+                </Typography>
 
                 <DescriptionProps>
                     <FlexColumn>

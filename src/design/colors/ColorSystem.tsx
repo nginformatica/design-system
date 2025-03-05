@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from 'flipper-ui'
 import {
     CardColor,
     CardHeader,
@@ -10,9 +11,7 @@ import {
 import {
     Content,
     ContentBold,
-    ContainerTitle,
     ContainerContent,
-    Description,
     FlexBetween,
     ListItems,
     OrdenateList,
@@ -67,7 +66,9 @@ export const ColorSystem = () => {
 
     return (
         <Wrapper>
-            <ContainerTitle>SISTEMA DE CORES</ContainerTitle>
+            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+                SISTEMA DE CORES
+            </Typography>
             <hr />
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
@@ -77,23 +78,23 @@ export const ColorSystem = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Description>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     Um <b>sistema de cores</b> refere-se ao conjunto completo de
                     cores disponíveis em uma interface. Ele abrange todas as
                     cores que podem ser usadas em diferentes contextos.
-                </Description>
-                <Description>
+                </Typography>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     O sistema de cores para os produtos SaaS da NG foi criado a
                     partir das cores base, que são as cores da marca e também as
                     cores que regem o design de interface. Ele foi projetado
                     para cobrir uma variedade de necessidades visuais e
                     funcionais, mantendo a identidade da marca e a experiência
                     do usuário no centro.
-                </Description>
+                </Typography>
 
-                <Description>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     Importância de um sistema de cores bem projetado:
-                </Description>
+                </Typography>
                 <OrdenateList>
                     <ListItems>
                         <b>Coerência visual: </b>Assegura que todos os elementos

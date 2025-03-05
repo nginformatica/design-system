@@ -1,5 +1,5 @@
 import React from 'react'
-import { DonutChart } from 'amazing-react-charts'
+import DonutChart from 'amazing-react-charts/core/donut-chart/DonutChart'
 import { Button } from 'flipper-ui'
 import { IconPhotoCamera } from 'flipper-ui/icons/mui'
 import type { Meta } from '@storybook/react'
