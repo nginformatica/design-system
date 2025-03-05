@@ -1,26 +1,22 @@
 import React, { useState } from 'react'
 import { SnackBar, Tooltip, Typography } from 'flipper-ui'
 import * as icons from 'flipper-ui/icons/mui'
+import { ContainerIcon } from './styles'
 import {
-    Container,
-    ContainerIcon,
-    ContainerProps,
-    DescriptionProps,
-    PropsDescription
-} from './styles'
-import {
-    ContainerTitle,
-    ContainerContent,
-    Description,
-    Wrapper,
-    FigmaRedirect,
-    FlexBetweenColumn,
     Content,
-    FlexColumn
+    Wrapper,
+    Container,
+    FlexColumn,
+    FigmaRedirect,
+    ContainerProps,
+    ContainerContent,
+    PropsDescription,
+    DescriptionProps,
+    FlexBetweenColumn
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
-const { deepOrange, indigo, neutral, primary, secondary } = theme.colors
+const { deepOrange, gray, indigo, neutral, primary, secondary } = theme.colors
 
 const iconSize = [
     {
@@ -31,12 +27,12 @@ const iconSize = [
     {
         icon: <icons.IconEdit fontSize='medium' />,
         size: '24x24',
-        prop: "<IconEdit fontSize='small' />"
+        prop: "<IconEdit fontSize='medium' />"
     },
     {
         icon: <icons.IconEdit fontSize='large' />,
         size: '35x35',
-        prop: "<IconEdit fontSize='small' />"
+        prop: "<IconEdit fontSize='large' />"
     },
     {
         icon: <icons.IconEdit sx={{ fontSize: 40 }} />,
@@ -96,7 +92,9 @@ export const MuiIcons = () => {
 
     return (
         <Wrapper>
-            <ContainerTitle>ÍCONES @mui</ContainerTitle>
+            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+                ÍCONES @mui
+            </Typography>
             <hr />
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=1-2&t=LeIzan5rXWdhCYVi-1'
@@ -106,8 +104,8 @@ export const MuiIcons = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Description>
-                    Como nossos ícones são utilizados diretamente do{' '}
+                <Typography variant='body1' margin='12px 0' align='justify'>
+                    Como nossos ícones são utilizados diretamente do
                     <a
                         href='https://mui.com/material-ui/material-icons/'
                         target='_blank'
@@ -115,13 +113,13 @@ export const MuiIcons = () => {
                         style={{
                             color: neutral[200]
                         }}>
-                        <b>@mui/icons</b>
+                        <b> @mui/icons</b>
                     </a>
                     , eles contam com algumas props nativas que podem ser
                     alteradas. No entando, recomenda-se evitar ao máximo burlar
                     as características originas propostas para os ícones, a fim
                     de padronizar as aplicações.
-                </Description>
+                </Typography>
 
                 <DescriptionProps>
                     <FlexColumn>
@@ -129,26 +127,27 @@ export const MuiIcons = () => {
                             <Typography variant='h6'>Tamanho</Typography>
                             <Typography>
                                 Para alterar o tamanho de um ícone, utilize a
-                                prop{' '}
+                                prop
                                 <b>
-                                    <code>fontSize</code>
+                                    <code> fontSize</code>
                                 </b>
-                                . Ela aceita valores de{' '}
+                                . Ela aceita valores de
                                 <b>
-                                    <code>"small" | "medium" | "large"</code>
+                                    <code> "small | medium | large"</code>
                                 </b>
-                                , sendo o{' '}
+                                , sendo o
                                 <b>
-                                    <code>"medium"</code>
-                                </b>{' '}
+                                    <code> "medium" </code>
+                                </b>
                                 o tamanho default. Para tamanhos diferentes,
-                                utilize a prop{' '}
+                                utilize a prop
                                 <b>
-                                    <code>sx</code>
+                                    <code> sx</code>
                                 </b>
-                                , especificando o tamanho do ícone através do{' '}
+                                , especificando o tamanho do ícone através do
+                                atributo
                                 <b>
-                                    <code>fontSize.</code>
+                                    <code> fontSize.</code>
                                 </b>
                             </Typography>
                         </PropsDescription>
@@ -176,24 +175,30 @@ export const MuiIcons = () => {
                         <PropsDescription>
                             <Typography variant='h6'>Cores</Typography>
                             <Typography>
-                                Para alterar a cor de um ícone. utilize a prop{' '}
+                                Para alterar a cor de um ícone, utilize a prop
                                 <b>
-                                    <code>color</code>
+                                    <code> color</code>
                                 </b>
                                 . Ela aceita os valores de{' '}
                                 <b>
                                     <code>
-                                        "inherit" | "disabled" | "primary" |
-                                        "secondary" | "error" | "warning".
+                                        "inherit | disabled | primary |
+                                        secondary | error | warning",
                                     </code>
-                                </b>
-                                Para cores diferentes, utilize a prop{' '}
+                                </b>{' '}
+                                sendo o
                                 <b>
-                                    <code>sx</code>
+                                    <code> "inherit" </code>
                                 </b>
-                                , especificando a cor do ícone através do{' '}
+                                a cor default. Para cores diferentes, utilize a
+                                prop
                                 <b>
-                                    <code>color.</code>
+                                    <code> sx</code>
+                                </b>
+                                , especificando a cor do ícone através do
+                                atributo
+                                <b>
+                                    <code> color.</code>
                                 </b>
                             </Typography>
                         </PropsDescription>

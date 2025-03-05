@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from 'flipper-ui'
 import {
     ColorsCard,
     CardHeader,
@@ -10,25 +11,25 @@ import {
 import {
     Content,
     ContentBold,
-    ContainerTitle,
     ContainerContent,
     Flex,
     FlexBetween,
     Wrapper,
-    Description,
     OrdenateList,
     ListItems,
     FigmaRedirect
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
-const { feedback, criticality, primary, secondary, action, priority } =
+const { criticality, feedback, gray, primary, secondary, action, priority } =
     theme.colors
 
 export const ColorRoles = () => {
     return (
         <Wrapper>
-            <ContainerTitle>PAPÉIS DE CORES</ContainerTitle>
+            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+                PAPÉIS DE CORES
+            </Typography>
             <hr />
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
@@ -38,24 +39,24 @@ export const ColorRoles = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Description>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     Os <b>papéis de cores</b> funcionam como uma camada
                     adicional de organização dentro do sistema de cores. Eles
                     descrevem a função de uma cor específica em uma interface e
                     seu contexto de uso.
-                </Description>
-                <Description>
+                </Typography>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     Esses papéis atuam como regras ou guias sobre como as cores
                     devem ser distribuídas na interface para garantir
                     consistência e clareza. Eles permitem que o sistema de cores
                     seja aplicado de maneira lógica e funcional, garantindo que
                     cores sejam usadas de forma intencional e relevante.
-                </Description>
+                </Typography>
 
-                <Description>
+                <Typography variant='body1' margin='12px 0' align='justify'>
                     Cada papel tem uma função específica na interface, por
                     exemplo:
-                </Description>
+                </Typography>
                 <ul>
                     <ListItems>
                         <b>Cor primária: </b> aplicada ao conteúdo principal que
@@ -75,7 +76,9 @@ export const ColorRoles = () => {
                     </ListItems>
                 </ul>
 
-                <Description>Importância dos papéis de cores:</Description>
+                <Typography variant='body1' margin='12px 0' align='justify'>
+                    Importância dos papéis de cores:
+                </Typography>
                 <OrdenateList>
                     <ListItems>
                         <b>Hierarquia visual: </b> Cria uma ordem visual clara e
