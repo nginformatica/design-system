@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.2
+
+- chore: render new specific icons
+
 ## 1.1.1
 
 - feat: add web typography content

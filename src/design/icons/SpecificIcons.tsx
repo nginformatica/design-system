@@ -129,7 +129,14 @@ const iconOptions = [
     'IconMegaCompany',
     'IconMinimumCompany',
     'IconSmallCompany',
-    'IconSuperCompany'
+    'IconSuperCompany',
+    'IconBelt',
+    'IconBoot',
+    'IconCoverall',
+    'IconMask',
+    'IconSafetyGlasses',
+    'IconVest',
+    'IconWeldingMask'
 ]
 
 export const SpecificIcons = () => {
