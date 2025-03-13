@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.3
+
+- chore: render new Exams and FirstSteps icons
+
 ## 1.1.2
 
 - chore: render new specific icons

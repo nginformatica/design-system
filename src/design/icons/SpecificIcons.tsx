@@ -136,7 +136,9 @@ const iconOptions = [
     'IconMask',
     'IconSafetyGlasses',
     'IconVest',
-    'IconWeldingMask'
+    'IconWeldingMask',
+    'IconExams',
+    'IconFirstSteps'
 ]
 
 export const SpecificIcons = () => {
