@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.4
+
+- feat: render new Headset and BackHand mui icons
+
 ## 1.1.3
 
 - chore: render new Exams and FirstSteps icons
