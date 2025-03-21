@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.5
+
+- feat: render new Launch and ContentPaste mui icons
+
 ## 1.1.4
 
 - feat: render new Headset and BackHand mui icons
