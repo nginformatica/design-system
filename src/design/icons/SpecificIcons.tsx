@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { SnackBar, Tooltip, Typography } from 'flipper-ui'
 import { IconContentCopy } from 'flipper-ui/icons/mui'
-import * as icons from 'flipper-ui/icons/specific'
+import * as specificIcons from './specific-icons'
 import { ContainerIcon, IconWrapper } from './styles'
 import {
     Content,
@@ -22,7 +22,7 @@ const { gray, indigo, primary } = theme.colors
 const iconProps = [
     {
         icon: (
-            <icons.IconBranch
+            <specificIcons.IconBranch
                 color={indigo[300]}
                 width={30}
                 height={30}
@@ -42,7 +42,7 @@ const iconProps = [
     },
     {
         icon: (
-            <icons.IconBranch
+            <specificIcons.IconBranch
                 color={indigo[400]}
                 width={40}
                 height={40}
@@ -62,7 +62,7 @@ const iconProps = [
     },
     {
         icon: (
-            <icons.IconBranch
+            <specificIcons.IconBranch
                 color={indigo[500]}
                 width={50}
                 height={50}
@@ -82,7 +82,7 @@ const iconProps = [
     },
     {
         icon: (
-            <icons.IconBranch
+            <specificIcons.IconBranch
                 color={indigo[600]}
                 width={60}
                 height={60}
@@ -139,7 +139,9 @@ const iconOptions = [
     'IconWeldingMask',
     'IconExams',
     'IconFirstSteps',
-    'IconWorkPermission'
+    'IconWorkPermission',
+    'IconFireHydrant',
+    'IconMandatesPartly'
 ]
 
 export const SpecificIcons = () => {
@@ -279,8 +281,8 @@ export const SpecificIcons = () => {
                 <Typography margin='24px 0 0' variant='h6'>
                     Ícones
                 </Typography>
-                <Container name='mui-icons'>
-                    {Object.entries(icons).map(
+                <Container name='specific-icons'>
+                    {Object.entries(specificIcons).map(
                         ([iconName, IconComponent], i) => (
                             <ContainerIcon key={i}>
                                 <Tooltip title='Copiar Referência'>
