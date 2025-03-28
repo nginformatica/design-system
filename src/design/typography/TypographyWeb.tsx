@@ -170,7 +170,7 @@ export const TypographyWeb = () => {
 
             <ContainerContent>
                 <Typography variant='body1' margin='12px 0' align='justify'>
-                    Como nossos tipografia é utilizada diretamente do{' '}
+                    Como nossa tipografia é utilizada diretamente do{' '}
                     <a
                         href='https://mui.com/material-ui/react-typography/?srsltid=AfmBOooYZz9m_WdQaIOKRaGj7Vh9lflQFFbuEJMi0TCIhXLN3H19wmPf'
                         target='_blank'
@@ -187,8 +187,8 @@ export const TypographyWeb = () => {
                         <b>flipper-ui</b>
                     </a>
                     , ela conta com algumas props nativas que podem ser
-                    alteradas. No entando, recomenda-se evitar ao máximo burlar
-                    as características originas propostas para a tipografia, a
+                    alteradas. No entanto, recomenda-se evitar ao máximo burlar
+                    as características originais propostas para a tipografia, a
                     fim de padronizar as aplicações.
                 </Typography>
 

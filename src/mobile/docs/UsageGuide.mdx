@@ -1,7 +1,33 @@
-import { Meta } from '@storybook/blocks';
+import { Meta, Canvas } from '@storybook/blocks';
 
 <Meta title="Mobile/Guia de uso" />
 
-## Usage Guide
+## DESENVOLVIMENTO MOBILE
 
-Here is a quick mobile usage guide!
+## Guia de uso
+
+Abaixo você encontrará um guia rápido de instalação e utilização de cada biblioteca.
+
+### ng-kit
+
+**1.** Instale o pacote adicionando o seguinte código ao arquivo `pubscpec.yaml` na seção de __dependencies__: 
+
+```sh
+dependencies:
+    ng_kit:
+        git:
+        url: git@ssh.dev.azure.com:v3/nginformatica/Pesquisa%20e%20Desenvolvimento/ngkit
+        ref: release/1.0.36
+```
+__Obs:__ O campo `ref` deve ser especificado conforme a versão desejada do pacote.
+
+**2.** Para utilizar qualquer componente do pacote, basta importar como no exemplo a seguir:
+
+    ```ts
+    import 'package:ng_kit/ng_kit.dart';
+
+    //Exemplo de uso do componente de navegação
+    NGNavigator.to(
+        HomeScreen(),
+    );
+    ```

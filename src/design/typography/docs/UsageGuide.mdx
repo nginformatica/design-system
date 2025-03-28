@@ -36,3 +36,26 @@ const App = () => (
 
 ### Tipografia Mobile
 
+Para utilizar no projeto mobile, basta importar através do `ng-kit`, escolhendo a tipografia através do `textTheme`:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+Text(
+    'text',
+    style: textTheme.bodySmall,
+)
+```
+
+Para modificar a cor ou outras propriedades da tipografia predefinida, basta utilizar `copyWith` para a propriedade desejada:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+Text(
+    'text',
+    style: textTheme.bodySmall?.copyWith(
+        color: NGColors.darkBlue,
+    )
+),
+```

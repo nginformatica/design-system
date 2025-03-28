@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Estilos/Cores/Mobile/Guia de Uso" />
+
+## Guia de Uso
+
+Os temas permitem que você aplique um tom consistente em uma aplicação, permitindo personalizar todos
+os aspectos de design do projeto para atender às necessidades específicas da marca.
+
+### Utilizando as cores
+
+#### Sistema de cores
+
+Para utilizar as cores do sistema, é necessário importá-las do `ng-kit`:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+//Uso da cor vermelha principal
+Container(color: NGColors.red);
+
+//Uso da cor azul com tom mais claro em relação à principal
+Container(color: NGColors.blue.shade200);
+```
+
+#### Papéis de cores
+
+Para utilizar as cores através de seus papéis, é necessário que a mesma seja utilizada em um componente `Color`:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+const Color(NGColors.primary_contrast);
+```
