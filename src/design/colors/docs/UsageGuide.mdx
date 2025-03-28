@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/blocks';
 
-<Meta title="Estilos/Cores/Web/Guia de Uso" />
+<Meta title="Estilos/Cores/Guia de Uso" />
 
 ## Guia de Uso
 
@@ -9,7 +9,9 @@ os aspectos de design do projeto para atender às necessidades específicas da m
 
 [Configurando o ThemeProvider](#configurando-o-themeprovider)
 &nbsp;|&nbsp;
-[Utilizando as cores](#utilizando-as-cores)
+[Utilizando as cores web](#utilizando-as-cores-web)
+&nbsp;|&nbsp;
+[Utilizando as cores mobile](#utilizando-as-cores-mobile)
 
 ### Configurando o ThemeProvider
 
@@ -43,7 +45,7 @@ const App = () => (
 )
 ```
 
-### Utilizando as cores
+### Utilizando as cores web
 
 #### Sistema de cores
 
@@ -75,4 +77,30 @@ const Component = () => (
     <Button color="secondary" />
     <Typography color="primary" />
 )
+```
+
+### Utilizando as cores mobile
+
+#### Sistema de cores
+
+Para utilizar as cores do sistema, é necessário importá-las do `ng-kit`:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+//Uso da cor vermelha principal
+Container(color: NGColors.red);
+
+//Uso da cor azul com tom mais claro em relação à principal
+Container(color: NGColors.blue.shade200);
+```
+
+#### Papéis de cores
+
+Para utilizar as cores através de seus papéis, é necessário que a mesma seja utilizada em um componente `Color`:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+const Color(NGColors.primary_contrast);
 ```
