@@ -17,7 +17,7 @@ const preview: Preview = {
                         'Iconografia',
                         ['Guia de Uso', 'Ícones @mui', 'Ícones Específicos'],
                         'Tipografia',
-                        ['Guia de Uso', 'Tipografia Web', 'Tipografia Mobile'],
+                        ['Guia de Uso', 'Tipografia Mobile', 'Tipografia Web'],
                     ],
                     'Web',
                     ['Introdução', 'Guia de Uso'],

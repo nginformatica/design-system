@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.6
+
+- feat: add mobile content for typography and colors
+
 ## 1.1.5
 
 - feat: render new Launch and ContentPaste mui icons

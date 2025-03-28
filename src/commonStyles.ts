@@ -12,6 +12,7 @@ export const Flex = styled.div`
 
 export const FlexColumn = styled(Flex)`
     flex-direction: column;
+    width: 100%;
 `
 
 export const FlexBetween = styled(Flex)`
@@ -77,6 +78,7 @@ export const ContainerProps = styled(Paper)<{
 }>`
     display: flex;
     gap: 6px;
+    flex-wrap: wrap;
     justify-content: ${props =>
         props.justify ? 'space-around' : 'space-between'};
     align-items: ${props => (props.align ? 'baseline' : 'center')};
