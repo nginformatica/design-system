@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.7
+
+- feat: add new icons:
+- @mui icons: IconCircle, IconNotifications
+- specific icons: IconCircleInner, IconCircleReturn, IconCircleRotate, IconClockLate, IconClockPending, IconEngineer, IconFireHydrant, IconHumanResource, IconImageRemove, IconImageUpdate, IconInventory, IconLamp, IconMandatesPartly, IconNurse, IconProcessing, IconSecretary, IconStorekeeper, IconTechnician, IconTriangleCircleDown, IconTriangleCircleUp, IconWaitingDelivery
+
 ## 1.1.6
 
 - feat: add mobile content for typography and colors
