@@ -109,6 +109,7 @@ export { IconTriangleCircleDown } from 'flipper-ui/icons/specific/IconTriangleCi
 export { IconTriangleCircleUp } from 'flipper-ui/icons/specific/IconTriangleCircleUp'
 export { IconTriangleDown } from 'flipper-ui/icons/specific/IconTriangleDown'
 export { IconTriangleUp } from 'flipper-ui/icons/specific/IconTriangleUp'
+export { IconTrophy } from 'flipper-ui/icons/specific/IconTrophy'
 export { IconVest } from 'flipper-ui/icons/specific/IconVest'
 export { IconWaitingDelivery } from 'flipper-ui/icons/specific/IconWaitingDelivery'
 export { IconWarehouse } from 'flipper-ui/icons/specific/IconWarehouse'

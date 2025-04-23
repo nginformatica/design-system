@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.8
+
+- feat: render new specific IconTrophy
+
 ## 1.1.7
 
 - feat: add new icons:
