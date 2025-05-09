@@ -93,3 +93,12 @@ export const DescriptionProps = styled(Flex)`
     gap: 16px;
     flex-wrap: wrap;
 `
+
+export const IcomoonIcon = styled.span<{ color: string }>`
+    font-size: 32px;
+    color: ${({ color }) => color};
+`
+export const SvgIcon = styled.img`
+    width: 32px;
+    height: 32px;
+`

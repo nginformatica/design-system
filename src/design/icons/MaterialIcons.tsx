@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { SnackBar, Tooltip, Typography } from 'flipper-ui'
 import * as icons from 'flipper-ui/icons/mui'
+import { mobileIcons } from './mobile-utils/MaterialIconGallery'
 import { ContainerIcon } from './styles'
 import {
     Content,
@@ -18,61 +19,85 @@ import { theme } from 'flipper-ui/theme'
 
 const { deepOrange, gray, indigo, neutral, primary, secondary } = theme.colors
 
-const iconSize = [
+const iconSizeMobile = [
     {
         icon: <icons.IconEdit fontSize='small' />,
         size: '20x20',
-        prop: "<IconEdit fontSize='small' />"
+        prop: `Icon(
+    NGAssets.icons.edit,
+    size: 20,
+)`
     },
     {
         icon: <icons.IconEdit fontSize='medium' />,
         size: '24x24',
-        prop: "<IconEdit fontSize='medium' />"
+        prop: `Icon(
+    NGAssets.icons.edit,
+    size: 24,
+)`
     },
     {
         icon: <icons.IconEdit fontSize='large' />,
         size: '35x35',
-        prop: "<IconEdit fontSize='large' />"
+        prop: `Icon(
+    NGAssets.icons.edit,
+    size: 35,
+)`
     },
     {
         icon: <icons.IconEdit sx={{ fontSize: 40 }} />,
         size: '40x40',
-        prop: '<IconEdit sx={{ fontSize: 40 }} />'
+        prop: `Icon(
+    NGAssets.icons.edit,
+    size: 40,
+)`
     }
 ]
 
-const iconColor = [
+const iconColorMobile = [
     {
         icon: <icons.IconEdit fontSize='large' sx={{ color: primary.main }} />,
-        prop: "<IconEdit color='primary' />"
+        prop: `Icon(
+    NGAssets.icons.edit,
+    color: NGColors.darkBlue,
+)`
     },
     {
         icon: (
             <icons.IconEdit fontSize='large' sx={{ color: secondary.main }} />
         ),
-        prop: "<IconEdit color='secondary' />"
+        prop: `Icon(
+    NGAssets.icons.edit,
+    color: Color(NGColors.secondary_dark),
+)`
     },
     {
         icon: (
             <icons.IconEdit fontSize='large' sx={{ color: deepOrange[600] }} />
         ),
-        prop: "<IconEdit color='error' />"
+        prop: `Icon(
+    NGAssets.icons.edit,
+    color: Color(NGColors.danger),
+)`
     },
     {
         icon: <icons.IconEdit fontSize='large' sx={{ color: indigo[600] }} />,
-        prop: '<IconEdit sx={{ color: indigo[600] }} />'
+        prop: `Icon(
+    NGAssets.icons.edit,
+    color: NGColors.indigo.shade600,
+)`
     }
 ]
 
-export const MuiIcons = () => {
+export const MaterialIcons = () => {
     const [icon, setIcon] = useState<string>('')
     const [open, setOpen] = useState<boolean>(false)
 
     const handleCopyToClipboard = (iconName: string) => {
         navigator.clipboard
-            .writeText(`import { ${iconName} } from 'flipper-ui/icons/mui'`)
+            .writeText(`NGAssets.icons.${iconName}`)
             .then(() => {
-                setIcon(iconName)
+                setIcon(`iconName`)
                 setOpen(true)
                 setTimeout(() => setOpen(false), 3500)
             })
@@ -83,7 +108,7 @@ export const MuiIcons = () => {
         return (
             <span>
                 <b>
-                    <code>{`<${icon} /> `}</code>
+                    <code>{`${icon}`}</code>
                 </b>{' '}
                 copiado para a área de transferência!
             </span>
@@ -93,7 +118,7 @@ export const MuiIcons = () => {
     return (
         <Wrapper>
             <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
-                ÍCONES @mui
+                ÍCONES Material UI
             </Typography>
             <hr />
             <FigmaRedirect
@@ -105,22 +130,22 @@ export const MuiIcons = () => {
 
             <ContainerContent>
                 <Typography variant='body1' margin='12px 0' align='justify'>
-                    Como nossos ícones são utilizados diretamente do
+                    Parte da iconografia é utilizada diretamente do
                     <a
-                        href='https://mui.com/material-ui/material-icons/'
+                        href='https://fonts.google.com/icons'
                         target='_blank'
                         rel='noreferrer'
                         style={{
                             color: neutral[200]
                         }}>
-                        <b> @mui/icons</b>
+                        <b> Material Icons</b>
                     </a>
-                    , eles contam com algumas props nativas que podem ser
-                    alteradas. No entanto, recomenda-se evitar ao máximo burlar
-                    as características originais propostas para os ícones, a fim
-                    de padronizar as aplicações.
+                    . Com isso, os ícones do Material UI importados através do
+                    <b> ng-kit</b> contém nomes semelhantes em snake case.
                 </Typography>
+            </ContainerContent>
 
+            <ContainerContent>
                 <DescriptionProps>
                     <FlexColumn>
                         <PropsDescription>
@@ -129,31 +154,14 @@ export const MuiIcons = () => {
                                 Para alterar o tamanho de um ícone, utilize a
                                 prop
                                 <b>
-                                    <code> fontSize</code>
+                                    <code> size</code>
                                 </b>
-                                . Ela aceita valores de
-                                <b>
-                                    <code> "small | medium | large"</code>
-                                </b>
-                                , sendo o
-                                <b>
-                                    <code> "medium" </code>
-                                </b>
-                                o tamanho default. Para tamanhos diferentes,
-                                utilize a prop
-                                <b>
-                                    <code> sx</code>
-                                </b>
-                                , especificando o tamanho do ícone através do
-                                atributo
-                                <b>
-                                    <code> fontSize.</code>
-                                </b>
+                                .
                             </Typography>
                         </PropsDescription>
 
                         <ContainerProps align justify name='mui-icons-size'>
-                            {iconSize.map((it, i) => (
+                            {iconSizeMobile.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
                                     <Typography
@@ -162,7 +170,9 @@ export const MuiIcons = () => {
                                         color='textSecondary'>
                                         <code>{it.size}</code>
                                     </Typography>
-                                    <Typography variant='caption'>
+                                    <Typography
+                                        variant='caption'
+                                        sx={{ whiteSpace: 'pre-wrap' }}>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -178,37 +188,18 @@ export const MuiIcons = () => {
                                 <b>
                                     <code> color</code>
                                 </b>
-                                . Ela aceita os valores de{' '}
-                                <b>
-                                    <code>
-                                        "inherit | disabled | primary |
-                                        secondary | error | warning",
-                                    </code>
-                                </b>{' '}
-                                sendo o
-                                <b>
-                                    <code> "inherit" </code>
-                                </b>
-                                a cor default. Para cores diferentes, utilize a
-                                prop
-                                <b>
-                                    <code> sx</code>
-                                </b>
-                                , especificando a cor do ícone através do
-                                atributo
-                                <b>
-                                    <code> color.</code>
-                                </b>
+                                .
                             </Typography>
                         </PropsDescription>
 
                         <ContainerProps justify name='mui-icons-color'>
-                            {iconColor.map((it, i) => (
+                            {iconColorMobile.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
                                     <Typography
                                         margin='12px 0 0'
-                                        variant='caption'>
+                                        variant='caption'
+                                        sx={{ whiteSpace: 'pre-wrap' }}>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -220,37 +211,29 @@ export const MuiIcons = () => {
 
             <Content>
                 <Typography margin='24px 0 0' variant='h6'>
-                    Ícones web
+                    Ícones mobile
                 </Typography>
-                <Container name='mui-icons'>
-                    {Object.entries(icons).map(
-                        ([iconName, IconComponent], i) => (
-                            <ContainerIcon key={i}>
-                                <Tooltip title='Copiar Referência'>
-                                    <icons.IconContentCopy
-                                        sx={{
-                                            position: 'absolute',
-                                            color: primary.light,
-                                            cursor: 'pointer',
-                                            fontSize: '16px',
-                                            top: '12px',
-                                            right: '12px'
-                                        }}
-                                        onClick={() =>
-                                            handleCopyToClipboard(iconName)
-                                        }
-                                    />
-                                </Tooltip>
-                                <IconComponent
-                                    fontSize='large'
-                                    sx={{ color: primary.main }}
+                <Container name='mobile-icons'>
+                    {mobileIcons.map(({ name, icon }, i) => (
+                        <ContainerIcon key={i}>
+                            <Tooltip title='Copiar Referência'>
+                                <icons.IconContentCopy
+                                    sx={{
+                                        position: 'absolute',
+                                        cursor: 'pointer',
+                                        fontSize: '16px',
+                                        top: '12px',
+                                        right: '12px'
+                                    }}
+                                    onClick={() => handleCopyToClipboard(name)}
                                 />
-                                <Typography margin='24px 0 0' variant='caption'>
-                                    <code>{`<${iconName} />`}</code>
-                                </Typography>
-                            </ContainerIcon>
-                        )
-                    )}
+                            </Tooltip>
+                            {icon}
+                            <Typography margin='24px 0 0' variant='caption'>
+                                <code>{`${name}`}</code>
+                            </Typography>
+                        </ContainerIcon>
+                    ))}
                 </Container>
             </Content>
 

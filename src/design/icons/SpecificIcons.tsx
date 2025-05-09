@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { SnackBar, Tooltip, Typography } from 'flipper-ui'
 import { IconContentCopy } from 'flipper-ui/icons/mui'
-import * as specificIcons from './specific-icons'
+import { IcoMoonIconGallery } from './mobile-utils/IcomoonIconGallery'
+import { SvgIconGallery } from './mobile-utils/SvgIconGallery'
+import * as specificIcons from './web-utils/specific-icons'
 import { ContainerIcon, IconWrapper } from './styles'
 import {
     Content,
@@ -154,6 +156,17 @@ export const SpecificIcons = () => {
                 `import { ${iconName} } from 'flipper-ui/icons/specific/${iconName}'`
             )
             .then(() => {
+                setIcon(`<${iconName} /> `)
+                setOpen(true)
+                setTimeout(() => setOpen(false), 3500)
+            })
+            .catch(err => console.error('Failed to copy text: ', err))
+    }
+
+    const handleCopyMobileIconToClipboard = (iconName: string) => {
+        navigator.clipboard
+            .writeText(`NGAssets.icons.${iconName}`)
+            .then(() => {
                 setIcon(iconName)
                 setOpen(true)
                 setTimeout(() => setOpen(false), 3500)
@@ -165,7 +178,7 @@ export const SpecificIcons = () => {
         return (
             <span>
                 <b>
-                    <code>{`<${icon} /> `}</code>
+                    <code>{`${icon}`}</code>
                 </b>{' '}
                 copiado para a área de transferência!
             </span>
@@ -267,7 +280,7 @@ export const SpecificIcons = () => {
                             {iconProps.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
-                                    <Typography variant='caption' fontSize={11}>
+                                    <Typography variant='caption'>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -279,9 +292,9 @@ export const SpecificIcons = () => {
 
             <Content>
                 <Typography margin='24px 0 0' variant='h6'>
-                    Ícones
+                    Ícones específicos web
                 </Typography>
-                <Container name='specific-icons'>
+                <Container name='web-specific-icons'>
                     {Object.entries(specificIcons).map(
                         ([iconName, IconComponent], i) => (
                             <ContainerIcon key={i}>
@@ -309,15 +322,24 @@ export const SpecificIcons = () => {
                                         viewBox={handleViewBox(iconName)}
                                     />
                                 </IconWrapper>
-                                <Typography
-                                    margin='24px 0 0'
-                                    variant='caption'
-                                    fontSize='11.5px'>
+                                <Typography margin='24px 0 0' variant='caption'>
                                     <code>{`<${iconName} />`}</code>
                                 </Typography>
                             </ContainerIcon>
                         )
                     )}
+                </Container>
+            </Content>
+
+            <Content>
+                <Typography margin='24px 0 0' variant='h6'>
+                    Ícones específicos mobile
+                </Typography>
+                <Container name='mobile-specific-icons'>
+                    <IcoMoonIconGallery
+                        onClick={handleCopyMobileIconToClipboard}
+                    />
+                    <SvgIconGallery onClick={handleCopyMobileIconToClipboard} />
                 </Container>
             </Content>
 

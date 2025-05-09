@@ -1,0 +1,42 @@
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_199_2030" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+<path d="M0 0H15V15H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_199_2030)">
+<path d="M14.5459 14.5605H0.454102V3.63469L7.48535 0.439453L14.5459 3.63469V14.5605Z" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.94434 14.5605V5.77148H12.0264V14.5605" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.94434 11.0449H6.45996V14.5605" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M4.70215 11.0449V11.9238" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask1_199_2030" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+<path d="M0 0H15V15H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_199_2030)">
+<path d="M8.51074 14.5605V11.0449H12.0264" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M10.2686 11.0449V11.9238" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.94434 7.5293H6.45996V11.0449" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.70215 7.5293V8.4082" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.16699 3.42773H8.80371" stroke="#616161" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.625 14.25H0.75V3.75L7.5 0.75L14.25 3.75V14.25H12.375V5.625H2.625V14.25Z" fill="#616161"/>
+<path d="M6 3H6.75H7.5H8.625" stroke="white"/>
+<mask id="mask2_199_2030" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+<path d="M0 0H15V15H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_199_2030)">
+<path d="M14.5459 14.5605H0.454102V3.63469L7.48535 0.439453L14.5459 3.63469V14.5605Z" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.94434 14.5605V5.77148H12.0264V14.5605" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.94434 11.0449H6.45996V14.5605" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M4.70215 11.0449V11.9238" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask3_199_2030" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+<path d="M0 0H15V15H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_199_2030)">
+<path d="M8.51074 14.5605V11.0449H12.0264" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M10.2686 11.0449V11.9238" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.94434 7.5293H6.45996V11.0449" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.70215 7.5293V8.4082" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.16699 3.42773H8.80371" stroke="#616161" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
