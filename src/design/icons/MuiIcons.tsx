@@ -157,13 +157,12 @@ export const MuiIcons = () => {
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
                                     <Typography
-                                        fontSize={10}
                                         margin='12px 0 0'
                                         variant='caption'
                                         color='textSecondary'>
                                         <code>{it.size}</code>
                                     </Typography>
-                                    <Typography variant='caption' fontSize={11}>
+                                    <Typography variant='caption'>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -209,8 +208,7 @@ export const MuiIcons = () => {
                                     {it.icon}
                                     <Typography
                                         margin='12px 0 0'
-                                        variant='caption'
-                                        fontSize={11}>
+                                        variant='caption'>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -247,10 +245,7 @@ export const MuiIcons = () => {
                                     fontSize='large'
                                     sx={{ color: primary.main }}
                                 />
-                                <Typography
-                                    margin='24px 0 0'
-                                    variant='caption'
-                                    fontSize='11.5px'>
+                                <Typography margin='24px 0 0' variant='caption'>
                                     <code>{`<${iconName} />`}</code>
                                 </Typography>
                             </ContainerIcon>

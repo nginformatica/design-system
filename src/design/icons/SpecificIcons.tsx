@@ -280,7 +280,7 @@ export const SpecificIcons = () => {
                             {iconProps.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
-                                    <Typography variant='caption' fontSize={11}>
+                                    <Typography variant='caption'>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -322,10 +322,7 @@ export const SpecificIcons = () => {
                                         viewBox={handleViewBox(iconName)}
                                     />
                                 </IconWrapper>
-                                <Typography
-                                    margin='24px 0 0'
-                                    variant='caption'
-                                    fontSize='11.5px'>
+                                <Typography margin='24px 0 0' variant='caption'>
                                     <code>{`<${iconName} />`}</code>
                                 </Typography>
                             </ContainerIcon>

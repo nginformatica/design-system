@@ -165,7 +165,6 @@ export const MaterialIcons = () => {
                                 <FlexBetweenColumn key={i}>
                                     {it.icon}
                                     <Typography
-                                        fontSize={10}
                                         margin='12px 0 0'
                                         variant='caption'
                                         color='textSecondary'>
@@ -173,7 +172,6 @@ export const MaterialIcons = () => {
                                     </Typography>
                                     <Typography
                                         variant='caption'
-                                        fontSize={11}
                                         sx={{ whiteSpace: 'pre-wrap' }}>
                                         <code>{it.prop}</code>
                                     </Typography>
@@ -201,7 +199,6 @@ export const MaterialIcons = () => {
                                     <Typography
                                         margin='12px 0 0'
                                         variant='caption'
-                                        fontSize={11}
                                         sx={{ whiteSpace: 'pre-wrap' }}>
                                         <code>{it.prop}</code>
                                     </Typography>
@@ -232,10 +229,7 @@ export const MaterialIcons = () => {
                                 />
                             </Tooltip>
                             {icon}
-                            <Typography
-                                margin='24px 0 0'
-                                variant='caption'
-                                fontSize='11.5px'>
+                            <Typography margin='24px 0 0' variant='caption'>
                                 <code>{`${name}`}</code>
                             </Typography>
                         </ContainerIcon>

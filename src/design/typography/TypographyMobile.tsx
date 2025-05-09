@@ -307,7 +307,6 @@ export const TypographyMobile = () => {
                                     </Typography>
                                     <Typography
                                         variant='caption'
-                                        fontSize={11}
                                         sx={{ whiteSpace: 'pre-wrap' }}>
                                         <code>{it.prop}</code>
                                     </Typography>
@@ -337,7 +336,6 @@ export const TypographyMobile = () => {
                                     </Typography>
                                     <Typography
                                         variant='caption'
-                                        fontSize={11}
                                         sx={{ whiteSpace: 'pre-wrap' }}>
                                         <code>{it.prop}</code>
                                     </Typography>

@@ -251,8 +251,7 @@ export const TypographyWeb = () => {
                                     </Typography>
                                     <Typography
                                         variant='caption'
-                                        margin='6px 0 0'
-                                        fontSize={11}>
+                                        margin='6px 0 0'>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
@@ -298,8 +297,7 @@ export const TypographyWeb = () => {
                                     </Typography>
                                     <Typography
                                         margin='6px 0 0'
-                                        variant='caption'
-                                        fontSize={11}>
+                                        variant='caption'>
                                         <code>{it.prop}</code>
                                     </Typography>
                                 </FlexBetweenColumn>
