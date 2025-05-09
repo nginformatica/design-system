@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.9
+
+- feat: add mobile iconography
+
 ## 1.1.8
 
 - feat: render new specific IconTrophy

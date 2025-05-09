@@ -6,11 +6,13 @@ import { Meta } from '@storybook/blocks';
 
 Ícones são símbolos projetados para representar conceitos ou características específicas. É muito importante que uma marca/aplicação tenha uma iconografia bem definida e similar em toda a interface.
 
-[Ícones @mui](#ícones-@mui)
+[Ícones web](#ícones-web)
 &nbsp;|&nbsp;
-[Ícones específicos](#ícones-específicos)
+[Ícones mobile](#ícones-mobile)
 
-### Ícones @mui
+### Ícones web
+
+#### Ícones @mui
 
 A fim de desenvolver uma interface harmônica, utilizamos como base para os ícones a biblioteca do `@mui`. Para utilizá-los, os mesmos são importados diretamente do `flipper-ui`:
 
@@ -26,7 +28,7 @@ const App = () => (
 )
 ```
 
-### Ícones específicos
+#### Ícones específicos
 
 Alguns ícones necessários para a interface da aplicação não estão disponíveis no `@mui`, com isso, os mesmos foram criados e adicionados ao `flipper-ui`, e devem ser importados da seguinte forma:
 
@@ -39,5 +41,21 @@ const App = () => (
     <Content>
         <IconDoctor fontSize='18px' />
     </Content>
+)
+```
+
+### Ícones mobile
+
+#### NGKit 
+
+A utilização dos ícones é feita através da biblioteca `ng-kit`, onde são agrupados os ícones importados do [Material icons](https://fonts.google.com/icons) e ícones específicos do projeto.
+Para utilizá-los, basta fazer da seguinte forma:
+
+```tsx
+import 'package:ng_kit/ng_kit.dart';
+
+Icon(
+    NGAssets.icons.close,
+    color: NGColors.red,
 )
 ```
