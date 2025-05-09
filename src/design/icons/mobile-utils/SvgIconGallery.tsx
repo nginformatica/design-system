@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Tooltip, Typography } from 'flipper-ui'
 import * as icons from 'flipper-ui/icons/mui'
+import { SvgIcon } from '../../../commonStyles'
 import { ContainerIcon } from '../styles'
 
 declare const require: {
@@ -26,15 +26,6 @@ const svgIcons = requireSvg.keys().map((key: string) => ({
     src: requireSvg(key)
 }))
 
-const SvgIcon = styled.img`
-    width: 32px;
-    height: 32px;
-`
-
-const SvgIconComponent = ({ src, name }: { src: string; name: string }) => {
-    return <SvgIcon src={src} alt={name} />
-}
-
 type SvgIconGalleryProps = {
     onClick: (iconName: string) => void
 }
@@ -54,7 +45,7 @@ export const SvgIconGallery = ({ onClick }: SvgIconGalleryProps) => {
                     onClick={() => onClick(name)}
                 />
             </Tooltip>
-            <SvgIconComponent src={src} name={name} />
+            <SvgIcon src={src} className={name} />
             <Typography margin='24px 0 0' variant='caption'>
                 <code>{`${name}`}</code>
             </Typography>
