@@ -1,6 +1,6 @@
 import React from 'react'
 import { Preview } from '@storybook/react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from '@emotion/react'
 import { ThemeProviderFlipper, muiThemeOptions, theme } from 'flipper-ui/theme'
 
 const preview: Preview = {

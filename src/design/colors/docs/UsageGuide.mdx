@@ -17,9 +17,9 @@ os aspectos de design do projeto para atender às necessidades específicas da m
 
 Para que seja possível aplicar o tema na aplicação, é necessário dois `providers`:
 
-- **styled-components**: a biblioteca conta com um `ThemeProvider` que tem suporte total a temas.
+- **@emotion/react**: a biblioteca conta com um `ThemeProvider` que tem suporte total a temas.
 Este componente fornece um tema para todos os componentes React abaixo dele por meio da API de contexto.
-Na árvore de renderização, todos os styled-components terão acesso ao tema fornecido, mesmo quando estiverem em vários níveis de profundidade.
+Na árvore de renderização, todos os @emotions terão acesso ao tema fornecido, mesmo quando estiverem em vários níveis de profundidade.
 O `ThemeProvider` vai receber um atributo `theme`, que contém todas as cores do **sistema de cores** proposto pelo tema.
 
 - **@mui/material**: os componentes do Material UI aderem ao tema padrão da biblioteca imediatamente
@@ -33,7 +33,7 @@ e seja estilizado de acordo com a cor primary definida na `palette` do `muiTheme
 import React from 'react'
 import { Button } from 'flipper-ui'
 import { ThemeProviderFlipper } from 'flipper-ui'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from '@emotion/react'
 import { muiThemeOptions, theme } from '@/theme'
 
 const App = () => (
@@ -51,7 +51,7 @@ const App = () => (
 Para utilizar as cores do sistema, é necessário importá-las do `flipper-ui/theme`:
 
 ```tsx
-import { default as styled } from 'styled-components'
+import styled from '@emotion/styled'
 import { theme } from 'flipper-ui/theme'
 
 const { gray, red } = theme.colors

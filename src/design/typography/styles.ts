@@ -1,4 +1,4 @@
-import { default as styled } from 'styled-components'
+import styled from '@emotion/styled'
 import { TableBody, TableCell } from 'flipper-ui'
 
 export const TableBodyTransparent = styled(TableBody)`

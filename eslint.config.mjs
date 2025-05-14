@@ -104,11 +104,6 @@ const rulesImport = {
                     position: 'before'
                 },
                 {
-                    pattern: 'styled-components',
-                    group: 'external',
-                    position: 'before'
-                },
-                {
                     pattern: './styles',
                     group: 'index',
                     position: 'after'
@@ -166,7 +161,12 @@ const rulesTypescript = {
 export default tseslint.config(
     ...tseslint.configs.recommended,
     {
-        ignores: ['docs/*', 'node_modules/*', 'eslint.config.js']
+        ignores: [
+            'docs/*',
+            'node_modules/*',
+            'generateIcoMoonList.js',
+            'eslint.config.js'
+        ]
     },
     {
         files: ['src/**/*.{ts,tsx}'],

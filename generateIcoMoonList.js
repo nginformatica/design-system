@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs')
 const path = require('path')
 
@@ -6,6 +5,7 @@ const inputFilePath = path.join(
     __dirname,
     'assets/icons/icomoon/selection.json'
 )
+
 const outputFilePath = path.join(__dirname, 'assets/icons/icomoon/icomoon.json')
 
 fs.readFile(inputFilePath, 'utf8', (err, data) => {

@@ -1,4 +1,4 @@
-import { default as styled } from 'styled-components'
+import styled from '@emotion/styled'
 import bg from '../../assets/bg.png'
 import { theme } from 'flipper-ui/theme'
 
