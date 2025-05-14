@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.0
+
+- feat: migrate styled-components to @emotion
+
 ## 1.1.9
 
 - feat: add mobile iconography
