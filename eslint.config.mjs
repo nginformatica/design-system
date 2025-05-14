@@ -166,7 +166,12 @@ const rulesTypescript = {
 export default tseslint.config(
     ...tseslint.configs.recommended,
     {
-        ignores: ['docs/*', 'node_modules/*', 'eslint.config.js']
+        ignores: [
+            'docs/*',
+            'node_modules/*',
+            'generateIcoMoonList.js',
+            'eslint.config.js'
+        ]
     },
     {
         files: ['src/**/*.{ts,tsx}'],
