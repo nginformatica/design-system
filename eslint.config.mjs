@@ -104,11 +104,6 @@ const rulesImport = {
                     position: 'before'
                 },
                 {
-                    pattern: 'styled-components',
-                    group: 'external',
-                    position: 'before'
-                },
-                {
                     pattern: './styles',
                     group: 'index',
                     position: 'after'

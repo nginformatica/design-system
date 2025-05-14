@@ -1,4 +1,4 @@
-import { default as styled } from 'styled-components'
+import styled from '@emotion/styled'
 import { FlexColumn } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
