@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.1
+
+- feat: add mobile spacing
+
 ## 1.2.0
 
 - feat: migrate styled-components to @emotion
