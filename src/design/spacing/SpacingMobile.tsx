@@ -11,7 +11,7 @@ import {
 } from '../../commonStyles'
 import { theme } from 'flipper-ui/theme'
 
-const { gray, primary } = theme.colors
+const { gray } = theme.colors
 
 type ITableBody = {
     acronym: string
@@ -199,10 +199,7 @@ export const SpacingMobile = () => {
                                 return (
                                     <TableRow key={i}>
                                         <TableCellTransparent align='center'>
-                                            <Typography
-                                                sx={{
-                                                    color: primary.main
-                                                }}>
+                                            <Typography>
                                                 {it.acronym}
                                             </Typography>
                                         </TableCellTransparent>
