@@ -107,7 +107,7 @@ export const SpacingMobile = () => {
                 <ContainerProps justify name='spacing-size'>
                     {sizes.map(size => (
                         <Square key={size} size={size}>
-                            {size}
+                            <Typography variant='overline'>{size}</Typography>
                         </Square>
                     ))}
                 </ContainerProps>

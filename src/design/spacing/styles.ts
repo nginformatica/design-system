@@ -24,7 +24,5 @@ export const Square = styled.div<SquareProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
-    color: darkolivegreen;
-    font-weight: 600;
+    color: ${green[700]};
 `
