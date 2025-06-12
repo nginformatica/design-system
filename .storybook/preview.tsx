@@ -22,7 +22,9 @@ const preview: Preview = {
                             'Iconografia Mobile - Material UI'
                         ],
                         'Tipografia',
-                        ['Guia de Uso', 'Tipografia Mobile', 'Tipografia Web']
+                        ['Guia de Uso', 'Tipografia Mobile', 'Tipografia Web'],
+                        'Espaçamento',
+                        ['Espaçamento Mobile', 'Espaçamento Web']
                     ],
                     'Web',
                     ['Introdução', 'Guia de Uso'],
