@@ -1,0 +1,41 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Estilos/Espaçamento e Grid/Guia de Uso" />
+
+## Guia de Uso
+
+Manter um espaçamento adequado é crucial para garantir que a interface seja clara, organizada e intuitiva. O uso do 8pt Grid System, com intervalos regulares de 8px (como 8px, 16px, 24px, 32px), contribui para uma hierarquia visual bem definida entre os elementos. Para ajustes mais sutis ou em componentes menores, valores intermediários como 4px e 12px também podem ser utilizados quando necessário.
+
+[Espaçamento Web](#espaçamento-web)
+&nbsp;|&nbsp;
+[Espaçamento Mobile](#espaçamento-mobile)
+
+### Espaçamento Web
+
+No desenvolvimento web, organizar todos os espaçamentos — como padding, margin e gap — em um único componente nem sempre é viável, principalmente devido à variedade de contextos em que são aplicados. Por isso, é comum utilizar os espaçamentos de forma pontual, diretamente onde são necessários, sempre seguindo a lógica de múltiplos de 4px (como 4px, 8px, 12px, 16px, etc). Essa abordagem garante consistência visual ao mesmo tempo em que oferece flexibilidade para lidar com diferentes layouts e componentes.
+
+```tsx
+import styled from '@emotion/styled'
+
+export const Container = styled.div`
+    display: grid;
+    gap: 16px;
+    padding: 8px;
+`
+```
+
+### Espaçamento Mobile
+
+Para utilizar no projeto mobile, use através dos tokens:
+
+```tsx
+class Spacing {
+    static const double xs = 4;
+    static const double sm = 8;
+    static const double md = 16;
+    static const double lg = 24;
+    static const double xl = 32;
+    static const double xxl = 48;
+    static const double xxxl = 64;
+}
+```

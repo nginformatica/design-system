@@ -67,7 +67,7 @@ export const Container = styled(Paper)`
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 24px;
     padding: 24px;
-    margin-top: 12px;
+    margin-top: 8px;
 `
 
 export const PropsDescription = styled.div``
@@ -83,8 +83,7 @@ export const ContainerProps = styled(Paper)<{
         props.justify ? 'space-around' : 'space-between'};
     align-items: ${props => (props.align ? 'baseline' : 'center')};
     padding: 16px;
-    margin-top: 12px;
-    font-size: 14px;
+    margin: 16px 0px;
     height: auto;
     min-height: 85px;
 `
