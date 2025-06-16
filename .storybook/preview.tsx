@@ -17,14 +17,19 @@ const preview: Preview = {
                         'Iconografia',
                         [
                             'Guia de Uso',
-                            'Iconografia Específica',
+                            'Iconografia Mobile - Material UI',
                             'Iconografia Web - @mui',
-                            'Iconografia Mobile - Material UI'
+                            'Iconografia Específica'
                         ],
                         'Tipografia',
                         ['Guia de Uso', 'Tipografia Mobile', 'Tipografia Web'],
-                        'Espaçamento',
-                        ['Espaçamento Mobile', 'Espaçamento Web']
+                        'Espaçamento e Grid',
+                        [
+                            'Guia de Uso',
+                            'Espaçamento e Grid',
+                            'Espaçamento Mobile',
+                            'Espaçamento Web'
+                        ]
                     ],
                     'Web',
                     ['Introdução', 'Guia de Uso'],

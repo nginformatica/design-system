@@ -155,7 +155,7 @@ const fontColor = [
 export const TypographyWeb = () => {
     return (
         <Wrapper>
-            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+            <Typography variant='h6' sx={{ color: gray[800] }}>
                 TIPOGRAFIA WEB
             </Typography>
 
@@ -169,7 +169,7 @@ export const TypographyWeb = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     Como nossa tipografia é utilizada diretamente do{' '}
                     <a
                         href='https://mui.com/material-ui/react-typography/?srsltid=AfmBOooYZz9m_WdQaIOKRaGj7Vh9lflQFFbuEJMi0TCIhXLN3H19wmPf'
@@ -194,8 +194,10 @@ export const TypographyWeb = () => {
 
                 <DescriptionProps>
                     <PropsDescription>
-                        <Typography variant='h6'>Propriedades</Typography>
-                        <Typography variant='body1' align='justify'>
+                        <Typography variant='body1' fontWeight={500}>
+                            Propriedades
+                        </Typography>
+                        <Typography align='justify'>
                             Como um utilitário CSS, o componente suporta todas
                             propriedades system. Para alterar as propriedades da
                             tipografia, utilize as props nativas do componente.
@@ -210,7 +212,9 @@ export const TypographyWeb = () => {
 
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Tamanho</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Tamanho
+                            </Typography>
                             <Typography align='justify'>
                                 Para alterar o tamanho da tipografia, utilize a
                                 prop
@@ -261,7 +265,9 @@ export const TypographyWeb = () => {
 
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Cores</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Cores
+                            </Typography>
                             <Typography align='justify'>
                                 Para alterar a cor da tipografia utilize a prop
                                 <b>
@@ -291,7 +297,7 @@ export const TypographyWeb = () => {
                             {fontColor.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     <Typography
-                                        variant='h3'
+                                        variant='h4'
                                         sx={{ color: it.color }}>
                                         Aa
                                     </Typography>
@@ -308,7 +314,7 @@ export const TypographyWeb = () => {
             </ContainerContent>
 
             <Content>
-                <Typography variant='h6' margin='24px 0 0'>
+                <Typography variant='h6' margin='16px 0 0'>
                     Tipografia
                 </Typography>
                 <Container name='mui-typography'>

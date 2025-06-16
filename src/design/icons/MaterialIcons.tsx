@@ -56,32 +56,28 @@ const iconSizeMobile = [
 
 const iconColorMobile = [
     {
-        icon: <icons.IconEdit fontSize='large' sx={{ color: primary.main }} />,
+        icon: <icons.IconEdit sx={{ color: primary.main }} />,
         prop: `Icon(
     NGAssets.icons.edit,
     color: NGColors.darkBlue,
 )`
     },
     {
-        icon: (
-            <icons.IconEdit fontSize='large' sx={{ color: secondary.main }} />
-        ),
+        icon: <icons.IconEdit sx={{ color: secondary.main }} />,
         prop: `Icon(
     NGAssets.icons.edit,
     color: Color(NGColors.secondary_dark),
 )`
     },
     {
-        icon: (
-            <icons.IconEdit fontSize='large' sx={{ color: deepOrange[600] }} />
-        ),
+        icon: <icons.IconEdit sx={{ color: deepOrange[600] }} />,
         prop: `Icon(
     NGAssets.icons.edit,
     color: Color(NGColors.danger),
 )`
     },
     {
-        icon: <icons.IconEdit fontSize='large' sx={{ color: indigo[600] }} />,
+        icon: <icons.IconEdit sx={{ color: indigo[600] }} />,
         prop: `Icon(
     NGAssets.icons.edit,
     color: NGColors.indigo.shade600,
@@ -117,10 +113,12 @@ export const MaterialIcons = () => {
 
     return (
         <Wrapper>
-            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+            <Typography variant='h6' sx={{ color: gray[800] }}>
                 ÍCONES Material UI
             </Typography>
+
             <hr />
+
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=1-2&t=LeIzan5rXWdhCYVi-1'
                 target='_blank'
@@ -129,7 +127,7 @@ export const MaterialIcons = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     Parte da iconografia é utilizada diretamente do
                     <a
                         href='https://fonts.google.com/icons'
@@ -149,7 +147,9 @@ export const MaterialIcons = () => {
                 <DescriptionProps>
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Tamanho</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Tamanho
+                            </Typography>
                             <Typography>
                                 Para alterar o tamanho de um ícone, utilize a
                                 prop
@@ -182,7 +182,9 @@ export const MaterialIcons = () => {
 
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Cores</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Cores
+                            </Typography>
                             <Typography>
                                 Para alterar a cor de um ícone, utilize a prop
                                 <b>
@@ -210,7 +212,7 @@ export const MaterialIcons = () => {
             </ContainerContent>
 
             <Content>
-                <Typography margin='24px 0 0' variant='h6'>
+                <Typography variant='h6' margin='16px 0 0'>
                     Ícones mobile
                 </Typography>
                 <Container name='mobile-icons'>

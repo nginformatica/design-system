@@ -43,23 +43,19 @@ const iconSize = [
 
 const iconColor = [
     {
-        icon: <icons.IconEdit fontSize='large' sx={{ color: primary.main }} />,
+        icon: <icons.IconEdit sx={{ color: primary.main }} />,
         prop: "<IconEdit color='primary' />"
     },
     {
-        icon: (
-            <icons.IconEdit fontSize='large' sx={{ color: secondary.main }} />
-        ),
+        icon: <icons.IconEdit sx={{ color: secondary.main }} />,
         prop: "<IconEdit color='secondary' />"
     },
     {
-        icon: (
-            <icons.IconEdit fontSize='large' sx={{ color: deepOrange[600] }} />
-        ),
+        icon: <icons.IconEdit sx={{ color: deepOrange[600] }} />,
         prop: "<IconEdit color='error' />"
     },
     {
-        icon: <icons.IconEdit fontSize='large' sx={{ color: indigo[600] }} />,
+        icon: <icons.IconEdit sx={{ color: indigo[600] }} />,
         prop: '<IconEdit sx={{ color: indigo[600] }} />'
     }
 ]
@@ -92,10 +88,12 @@ export const MuiIcons = () => {
 
     return (
         <Wrapper>
-            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+            <Typography variant='h6' sx={{ color: gray[800] }}>
                 ÍCONES @mui
             </Typography>
+
             <hr />
+
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=1-2&t=LeIzan5rXWdhCYVi-1'
                 target='_blank'
@@ -104,7 +102,7 @@ export const MuiIcons = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     Como nossos ícones são utilizados diretamente do
                     <a
                         href='https://mui.com/material-ui/material-icons/'
@@ -124,7 +122,9 @@ export const MuiIcons = () => {
                 <DescriptionProps>
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Tamanho</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Tamanho
+                            </Typography>
                             <Typography>
                                 Para alterar o tamanho de um ícone, utilize a
                                 prop
@@ -172,7 +172,9 @@ export const MuiIcons = () => {
 
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Cores</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Cores
+                            </Typography>
                             <Typography>
                                 Para alterar a cor de um ícone, utilize a prop
                                 <b>
@@ -219,7 +221,7 @@ export const MuiIcons = () => {
             </ContainerContent>
 
             <Content>
-                <Typography margin='24px 0 0' variant='h6'>
+                <Typography margin='16px 0 0' variant='h6'>
                     Ícones web
                 </Typography>
                 <Container name='mui-icons'>

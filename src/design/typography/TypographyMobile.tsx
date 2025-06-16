@@ -231,7 +231,7 @@ Text(
 export const TypographyMobile = () => {
     return (
         <Wrapper>
-            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+            <Typography variant='h6' sx={{ color: gray[800] }}>
                 TIPOGRAFIA MOBILE
             </Typography>
 
@@ -245,7 +245,7 @@ export const TypographyMobile = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     Como nossa tipografia é utilizada diretamente do{' '}
                     <a
                         href=''
@@ -263,7 +263,9 @@ export const TypographyMobile = () => {
                 <DescriptionProps>
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Tamanho</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Tamanho
+                            </Typography>
                             <Typography align='justify'>
                                 Para alterar o tamanho da tipografia, utilize a
                                 prop
@@ -317,11 +319,13 @@ export const TypographyMobile = () => {
 
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Cores</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Cores
+                            </Typography>
                             <Typography align='justify'>
                                 Para alterar a cor da tipografia utilize a prop
                                 <b>
-                                    <code> color</code>
+                                    <code> color.</code>
                                 </b>
                             </Typography>
                         </PropsDescription>
@@ -330,7 +334,7 @@ export const TypographyMobile = () => {
                             {fontColor.map((it, i) => (
                                 <FlexBetweenColumn key={i}>
                                     <Typography
-                                        variant='h3'
+                                        variant='h4'
                                         sx={{ color: it.color }}>
                                         Aa
                                     </Typography>
@@ -347,10 +351,10 @@ export const TypographyMobile = () => {
             </ContainerContent>
 
             <Content>
-                <Typography variant='h6' margin='24px 0 0'>
+                <Typography variant='h6' margin='16px 0 0'>
                     Tipografia
                 </Typography>
-                <Container name='mui-typography'>
+                <Container name='typography'>
                     <Table>
                         <TableHead>
                             <TableRow>
