@@ -233,10 +233,12 @@ export const SpecificIcons = () => {
 
     return (
         <Wrapper>
-            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+            <Typography variant='h6' sx={{ color: gray[800] }}>
                 ÍCONES ESPECÍFICOS
             </Typography>
+
             <hr />
+
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=1-2&t=LeIzan5rXWdhCYVi-1'
                 target='_blank'
@@ -245,7 +247,7 @@ export const SpecificIcons = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     Para garantir uma interface harmônica e coerente, alguns
                     ícones foram criados para propósitos específicos em cada
                     aplicação. Eles também podem ser modificados para melhor
@@ -255,7 +257,9 @@ export const SpecificIcons = () => {
                 <DescriptionProps>
                     <FlexColumn>
                         <PropsDescription>
-                            <Typography variant='h6'>Propriedades</Typography>
+                            <Typography variant='body1' fontWeight={500}>
+                                Propriedades
+                            </Typography>
                             <Typography>
                                 Para alterar o tamanho de um ícone, utilize as
                                 props{' '}
@@ -291,7 +295,7 @@ export const SpecificIcons = () => {
             </ContainerContent>
 
             <Content>
-                <Typography margin='24px 0 0' variant='h6'>
+                <Typography variant='h6' margin='16px 0 0'>
                     Ícones específicos web
                 </Typography>
                 <Container name='web-specific-icons'>
@@ -332,7 +336,7 @@ export const SpecificIcons = () => {
             </Content>
 
             <Content>
-                <Typography margin='24px 0 0' variant='h6'>
+                <Typography variant='h6' margin='24px 0 0'>
                     Ícones específicos mobile
                 </Typography>
                 <Container name='mobile-specific-icons'>

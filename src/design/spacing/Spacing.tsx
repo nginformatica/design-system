@@ -64,15 +64,11 @@ export const Spacing = () => {
                     ))}
                 </ContainerProps>
 
-                <Typography
-                    variant='body1'
-                    margin='16px 0'
-                    align='justify'
-                    fontWeight={600}>
+                <Typography variant='body1' margin='16px 0' fontWeight={600}>
                     Mas por que 8 pontos?
                 </Typography>
 
-                <Typography margin='16px 0' align='justify'>
+                <Typography margin='16px 0'>
                     <ul>
                         <li>
                             <b>Escalabilidade</b>: O sistema de 8 pontos se
@@ -92,15 +88,11 @@ export const Spacing = () => {
                     desse sistema em suas diretrizes de design.
                 </Typography>
 
-                <Typography
-                    variant='body1'
-                    margin='16px 0'
-                    align='justify'
-                    fontWeight={600}>
+                <Typography variant='body1' margin='16px 0' fontWeight={600}>
                     Princípios
                 </Typography>
 
-                <Typography margin='16px 0' align='justify'>
+                <Typography margin='16px 0'>
                     <ul>
                         <li>
                             Utilize <b>múltiplos de 8px</b> para definir
@@ -141,7 +133,7 @@ export const Spacing = () => {
                     <img src={grid} alt='Grid' width='100%' />
                 </ImageContainer>
 
-                <Typography margin='24px 0 16px 0' align='justify'>
+                <Typography margin='24px 0 16px 0'>
                     Dependendo da necessidade, pode-se usar:
                     <ul>
                         <li>

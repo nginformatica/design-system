@@ -13,8 +13,6 @@ import {
     ContentBold,
     ContainerContent,
     FlexBetween,
-    ListItems,
-    OrdenateList,
     Wrapper,
     FigmaRedirect
 } from '../../commonStyles'
@@ -66,10 +64,12 @@ export const ColorSystem = () => {
 
     return (
         <Wrapper>
-            <Typography variant='h5' fontWeight={600} sx={{ color: gray[800] }}>
+            <Typography variant='h6' sx={{ color: gray[800] }}>
                 SISTEMA DE CORES
             </Typography>
+
             <hr />
+
             <FigmaRedirect
                 href='https://www.figma.com/design/X7IRemjcDX38XcunlLKuVn/Foundations?node-id=0-1&t=j30FU4pxY1hsVu3m-1'
                 target='_blank'
@@ -78,12 +78,12 @@ export const ColorSystem = () => {
             </FigmaRedirect>
 
             <ContainerContent>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     Um <b>sistema de cores</b> refere-se ao conjunto completo de
                     cores disponíveis em uma interface. Ele abrange todas as
                     cores que podem ser usadas em diferentes contextos.
                 </Typography>
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0' align='justify'>
                     O sistema de cores para os produtos SaaS da NG foi criado a
                     partir das cores base, que são as cores da marca e também as
                     cores que regem o design de interface. Ele foi projetado
@@ -92,26 +92,28 @@ export const ColorSystem = () => {
                     do usuário no centro.
                 </Typography>
 
-                <Typography variant='body1' margin='12px 0' align='justify'>
+                <Typography margin='16px 0'>
                     Importância de um sistema de cores bem projetado:
                 </Typography>
-                <OrdenateList>
-                    <ListItems>
-                        <b>Coerência visual: </b>Assegura que todos os elementos
-                        visuais tenham um alinhamento consistente com a
-                        identidade da marca;
-                    </ListItems>
-                    <ListItems>
-                        <b>Comunicação clara:</b> Ajuda a comunicar ações,
-                        estados e intenções de forma clara, usando cores
-                        familiares e previsíveis;
-                    </ListItems>
-                    <ListItems>
-                        <b>Escalabilidade:</b> Um sistema de cores bem
-                        estruturado pode ser facilmente escalado e adaptado para
-                        novas funcionalidades e expansões do produto.
-                    </ListItems>
-                </OrdenateList>
+                <Typography>
+                    <ol>
+                        <li>
+                            <b>Coerência visual: </b>Assegura que todos os
+                            elementos visuais tenham um alinhamento consistente
+                            com a identidade da marca;
+                        </li>
+                        <li>
+                            <b>Comunicação clara:</b> Ajuda a comunicar ações,
+                            estados e intenções de forma clara, usando cores
+                            familiares e previsíveis;
+                        </li>
+                        <li>
+                            <b>Escalabilidade:</b> Um sistema de cores bem
+                            estruturado pode ser facilmente escalado e adaptado
+                            para novas funcionalidades e expansões do produto.
+                        </li>
+                    </ol>
+                </Typography>
             </ContainerContent>
 
             <Container name='color-system'>

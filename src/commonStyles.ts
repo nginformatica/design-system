@@ -36,12 +36,6 @@ export const Wrapper = styled.div`
     background-color: ${neutral[100]};
 `
 
-export const OrdenateList = styled.ol``
-
-export const ListItems = styled.li`
-    padding-bottom: 12px;
-`
-
 export const ContentBold = styled.div`
     font-weight: 600;
 `
