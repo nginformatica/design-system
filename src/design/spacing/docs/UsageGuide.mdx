@@ -26,16 +26,39 @@ export const Container = styled.div`
 
 ### Espaçamento Mobile
 
-Para utilizar no projeto mobile, use através dos tokens:
+Para utilizar no projeto mobile, basta importar através do `ng-kit`. A tag usada no componente de espaçamento é a __NGEdgeInsets__,
+que deve ser usada juntamente com um dos seguintes tipos: __only__, __all__, __symmetric__ ou __onlyMixed__. Juntamente com algum desses tipos, deve ser definido
+o tamanho do espaçamento utilizando o __NGSize__ com algum dos seguintes tamanhos: __s0__, __s4__, __s8__, __s12__, __s16__, __s20__, __s24__, __s28__,
+__s32__, __s36__, __s40__, __s44__, __s48__, __s52__, __s56__, __s60__, __s64__. Para qualquer tamanho além de 64 pixels, deve ser utilizado a opção __onlyMixed__,
+onde se pode definir livremente o valor desejado para qualquer um dos lados.
 
 ```tsx
-class Spacing {
-    static const double xs = 4;
-    static const double sm = 8;
-    static const double md = 16;
-    static const double lg = 24;
-    static const double xl = 32;
-    static const double xxl = 48;
-    static const double xxxl = 64;
-}
+
+//Usando all
+Padding(
+    padding:
+        NGEdgeInsets.all(NGSize.s8),
+    child: //Widget filho
+),
+
+//Usando symmetric
+Padding(
+    padding:
+        NGEdgeInsets.symmetric(vertical: NGSize.s40, horizontal: NGSize.s8),
+    child: //Widget filho
+),
+
+//Usando only
+Padding(
+    padding:
+        NGEdgeInsets.only(left: NGSize.s4, top: NGSize.s8),
+    child: //Widget filho
+),
+
+//Usando onlyMixed
+Padding(
+    padding:
+        NGEdgeInsets.onlyMixed(bottom: 120, top: 12),
+    child: //Widget filho
+),
 ```
