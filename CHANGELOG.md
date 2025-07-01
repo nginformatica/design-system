@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.4
+
+- chore: add new icon and rename info_filter icon
+
 ## 1.2.3
 
 - chore: update mobile spacing
