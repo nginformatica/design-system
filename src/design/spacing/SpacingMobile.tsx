@@ -33,22 +33,23 @@ const tableBody: ITableBody = [
         meaning: 'Extra Small',
         size: '4px',
         interpretation: 'Muito pequeno',
-        usageSuggestion: 'SizedBox(height: 4), espaçamento entre ícone e texto'
+        usageSuggestion:
+            'NGEdgeInsets.only(top: NGSize.s4), espaçamento entre ícone e texto'
     },
     {
         acronym: 'sm',
         meaning: 'Small',
         size: '8px',
         interpretation: 'Pequeno',
-        usageSuggestion: 'EdgeInsets.all(8), margens internas pequenas'
+        usageSuggestion:
+            'NGEdgeInsets.all(NGSize.s8), margens internas pequenas'
     },
     {
         acronym: 'md',
         meaning: 'Medium',
         size: '16px',
         interpretation: 'Padrão',
-        usageSuggestion:
-            'EdgeInsets.symmetric(horizontal: 16), SizedBox(height: 16)'
+        usageSuggestion: 'NGEdgeInsets.symmetric(horizontal: NGSize.s16)'
     },
     {
         acronym: 'lg',
@@ -56,28 +57,31 @@ const tableBody: ITableBody = [
         size: '24px',
         interpretation: 'Acima do padrão',
         usageSuggestion:
-            'SizedBox(height: 24), espaçamento entre cards ou blocos'
+            'NGEdgeInsets.only(top: NGSize.s24), espaçamento entre cards ou blocos'
     },
     {
         acronym: 'xl',
         meaning: 'Extra Large',
         size: '32px',
         interpretation: 'Grande',
-        usageSuggestion: 'EdgeInsets.all(32), espaço para áreas amplas'
+        usageSuggestion:
+            'NGEdgeInsets.all(NGSize.s32), espaço para áreas amplas'
     },
     {
         acronym: 'xxl',
         meaning: 'Extra Extra Large',
         size: '48px',
         interpretation: 'Muito grande',
-        usageSuggestion: 'Padding(padding: EdgeInsets.all(48)), páginas amplas'
+        usageSuggestion:
+            'Padding(padding: NGEdgeInsets.all(NGSize.s48)), páginas amplas'
     },
     {
         acronym: 'xxxl',
         meaning: 'Triple Extra Large',
         size: '64px',
         interpretation: 'Enorme',
-        usageSuggestion: 'EdgeInsets.all(64), containers principais, headers'
+        usageSuggestion:
+            'NGEdgeInsets.all(NGSize.s64), containers principais, headers'
     }
 ]
 

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.3
+
+- chore: update mobile spacing
+
 ## 1.2.2
 
 - feat: add web spacing
