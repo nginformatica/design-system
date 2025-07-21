@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.5
+
+- feat: render IconExpand and IconVote from web @mui icons
+
 ## 1.2.4
 
 - chore: add new icon and rename info_filter icon
