@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.6
+
+- feat: render IconGridView and IconTableView from web @mui icons
+
 ## 1.2.5
 
 - feat: render IconExpand and IconVote from web @mui icons
