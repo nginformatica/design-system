@@ -143,7 +143,8 @@ const iconOptions = [
     'IconFirstSteps',
     'IconWorkPermission',
     'IconFireHydrant',
-    'IconMandatesPartly'
+    'IconMandatesPartly',
+    'IconMicrosoftEntra'
 ]
 
 export const SpecificIcons = () => {
