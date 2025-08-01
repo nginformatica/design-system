@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.7
+
+- feat: render specific icon IconMicrosoftEntra
+
 ## 1.2.6
 
 - feat: render IconGridView and IconTableView from web @mui icons
