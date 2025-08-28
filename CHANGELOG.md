@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.8
+
+- feat: render specific icons IconAddLink and IconRemoveLink
+
 ## 1.2.7
 
 - feat: render specific icon IconMicrosoftEntra
