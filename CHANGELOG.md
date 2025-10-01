@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.9
+
+- feat: render mui icon IconWebhook
+
 ## 1.2.8
 
 - feat: render specific icons IconAddLink and IconRemoveLink
