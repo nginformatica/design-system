@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.10
+
+- feat: render mui icon IconPictureAsPdf
+
 ## 1.2.9
 
 - feat: render mui icon IconWebhook
