@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.3.0
+
+- chore: update Node to 22.21.1 (LTS)
+
 ## 1.2.10
 
 - feat: render mui icon IconPictureAsPdf
