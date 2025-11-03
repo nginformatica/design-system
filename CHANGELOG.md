@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.0
+
+- update Node to 24.11.0 (LTS)
+
 ## 1.3.0
 
 - chore: update Node to 22.21.1 (LTS)
