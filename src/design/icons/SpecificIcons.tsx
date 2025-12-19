@@ -319,13 +319,19 @@ export const SpecificIcons = () => {
                                     />
                                 </Tooltip>
                                 <IconWrapper>
-                                    <IconComponent
-                                        active
-                                        color={handleColor(iconName)}
-                                        width={handleSize(iconName)}
-                                        height={handleSize(iconName)}
-                                        viewBox={handleViewBox(iconName)}
-                                    />
+                                    {iconName === 'IconFilePfx' ? (
+                                        <specificIcons.IconFilePfx fontSize='large' />
+                                    ) : (
+                                        <IconComponent
+                                            active
+                                            // migrate all icons to svg mui icons
+                                            // @ts-expect-error fix
+                                            color={handleColor(iconName)}
+                                            width={handleSize(iconName)}
+                                            height={handleSize(iconName)}
+                                            viewBox={handleViewBox(iconName)}
+                                        />
+                                    )}
                                 </IconWrapper>
                                 <Typography margin='24px 0 0' variant='caption'>
                                     <code>{`<${iconName} />`}</code>

@@ -47,6 +47,7 @@ export { IconExtinguishingSystem } from 'flipper-ui/icons/specific/IconExtinguis
 export { IconFaceScan } from 'flipper-ui/icons/specific/IconFaceScan'
 export { IconFemale } from 'flipper-ui/icons/specific/IconFemale'
 export { IconFileInform } from 'flipper-ui/icons/specific/IconFileInform'
+export { IconFilePfx } from 'flipper-ui/icons/specific/IconFilePfx'
 export { IconFireHydrant } from 'flipper-ui/icons/specific/IconFireHydrant'
 export { IconFirstSteps } from 'flipper-ui/icons/specific/IconFirstSteps'
 export { IconFluig } from 'flipper-ui/icons/specific/IconFluig'
