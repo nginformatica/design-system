@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.2
+
+- feat: render mui icon IconEditLocationAlt
+
 ## 1.4.1
 
 - chore: render specific icon IconFilePfx
