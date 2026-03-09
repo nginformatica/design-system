@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.4.3
+
+- feat: render specific icons IconCancelNote, IconViewNote and IconPendingNote
+- feat: render mui icons IconDraw, IconEditNote, IconInfoOutlined, IconWarningOutlined and IconTokenRounded
+
 ## 1.4.2
 
 - feat: render mui icon IconEditLocationAlt
