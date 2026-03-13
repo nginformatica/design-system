@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.4
+
+- update Node to 24.14.0 (LTS)
+
 ## 1.4.3
 
 - feat: render specific icons IconCancelNote, IconViewNote and IconPendingNote
