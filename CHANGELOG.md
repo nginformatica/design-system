@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.4.5
+
+- chore: render specific icon `IconPCA`
+- chore: render mui icons `IconCancel`, `IconPostAddOutlined`, `IconRequestQuote` and `IconReport`
+
 ## 1.4.4
 
 - update Node to 24.14.0 (LTS)

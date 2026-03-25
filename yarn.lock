@@ -3497,10 +3497,10 @@ flatted@^3.2.9:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.4.1.tgz#84ccd9579e76e9cc0d246c11d8be0beb019143e6"
   integrity sha512-IxfVbRFVlV8V/yRaGzk0UVIcsKKHMSfYw66T/u4nTwlWteQePsxe//LjudR1AMX4tZW3WFCh3Zqa/sjlqpbURQ==
 
-flipper-ui@0.39.9:
-  version "0.39.9"
-  resolved "https://registry.yarnpkg.com/flipper-ui/-/flipper-ui-0.39.9.tgz#3c800075a988625525b1ba5871b5136bc022214c"
-  integrity sha512-Lwwb6eUhfXuGHM2HehSLMX5AynRixaJ+6Ly7pzNTIzy9MhSL4Md8amhq8Se5j6EPDXULGBGV0Me/UAR0J6CGyg==
+flipper-ui@0.39.12:
+  version "0.39.12"
+  resolved "https://registry.yarnpkg.com/flipper-ui/-/flipper-ui-0.39.12.tgz#86a8360ffc6b227d7a514b2a425ab5ca74026948"
+  integrity sha512-YXu8DARlkMjteNhS6LbspFq92Yzs71DZojBuKE4hx9P8xJDIwGPw6WJWjeKLNDPf9HyUbOLktRfpdUafIxnVQA==
   dependencies:
     "@emotion/react" "11.14.0"
     "@emotion/styled" "11.14.1"
