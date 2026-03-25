@@ -108,6 +108,7 @@ const iconOptions = [
     'IconAET',
     'IconLTCAT',
     'IconLTP',
+    'IconPCA',
     'IconPAE',
     'IconPCMAT',
     'IconPCMSO',
