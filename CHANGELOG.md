@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.6
+
+- chore: render mui icons `IconAir`, `IconBiotechOutlined`, `IconBloodtypeOutlined`, `IconHeadphones`, `IconHearing`, `IconImageOutlined`, `IconMedicalServicesOutlined`, `IconRemoveRedEyeOutlined`, `IconScienceOutlined`, `IconVerifiedOutlined`, `IconVisibilityOutlined`, `IconWaterDropOutlined`
+
 ## 1.4.5
 
 - chore: render specific icon `IconPCA`
