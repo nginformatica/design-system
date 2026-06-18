@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.7
+
+- chore: render mui icons `IconNumbers`, `IconToggleOn`, `IconFileUpload`, `IconCalendarToday`, `IconInventory2`, `IconMonetizationOnOutlined`, `IconArrowForward` and `IconAccessTimeFilled`
+
 ## 1.4.6
 
 - chore: render mui icons `IconAir`, `IconBiotechOutlined`, `IconBloodtypeOutlined`, `IconHeadphones`, `IconHearing`, `IconImageOutlined`, `IconMedicalServicesOutlined`, `IconRemoveRedEyeOutlined`, `IconScienceOutlined`, `IconVerifiedOutlined`, `IconVisibilityOutlined`, `IconWaterDropOutlined`
