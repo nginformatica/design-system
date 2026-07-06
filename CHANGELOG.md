@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.8
+
+- chore: render mui icons `IconComputer`, `IconSlowMotionVideo`, `IconSmartphone` and `IconTrendingFlatRounded`
+
 ## 1.4.7
 
 - chore: render mui icons `IconNumbers`, `IconToggleOn`, `IconFileUpload`, `IconCalendarToday`, `IconInventory2`, `IconMonetizationOnOutlined`, `IconArrowForward` and `IconAccessTimeFilled`
