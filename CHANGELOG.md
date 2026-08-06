@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.9
+
+- chore: render mui icons `IconAutoFixHigh`, `IconBorderAllRounded`, `IconBorderClearRounded`, `IconBorderInnerRounded`, `IconBorderOuterRounded`, `IconCalendarViewMonthRounded`, `IconCropPortraitRounded`, `IconDeleteSweepRounded`, `IconFileOpenRounded`, `IconFormatAlignCenterRounded`, `IconFormatAlignLeftRounded`, `IconFormatAlignRightRounded`, `IconFormatBold`, `IconFormatItalic`, `IconFormatListBulletedRounded`, `IconFormatListNumberedRounded`, `IconFormatUnderlined`, `IconHeight`, `IconKeyboardDoubleArrowDownRounded`, `IconKeyboardDoubleArrowUpRounded`, `IconLooksOneOutlined`, `IconNotesRounded`, `IconPregnantWoman`, `IconPrintDisabledOutlined`, `IconPrintOutlined`, `IconRedoRounded`, `IconRemove`, `IconRestorePageRounded`, `IconSegmentRounded`, `IconShare`, `IconTocRounded` and `IconUndoRounded`
+
 ## 1.4.8
 
 - chore: render mui icons `IconComputer`, `IconSlowMotionVideo`, `IconSmartphone` and `IconTrendingFlatRounded`
